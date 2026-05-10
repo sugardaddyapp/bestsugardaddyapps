@@ -8,6 +8,16 @@ on:
 jobs:
   rebuild:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Trigger DigitalOcean App Platform deploy
-        run: curl -s -X POST "${{ secrets.DO_DEPLOY_WEBHOOK_URL }}"
+      - uses: actions/checkout@v4
+
+      - name: Bump rebuild timestamp
+        run: |
+          echo "$(date -u '+%Y-%m-%dT%H:%M:%SZ')" > .last-rebuild
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .last-rebuild
+          git commit -m "chore: monthly rebuild $(date -u '+%Y-%m')"
+          git push
