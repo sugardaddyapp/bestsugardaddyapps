@@ -1,0 +1,16 @@
+{
+  "name": "bestsugardaddyapps",
+  "version": "1.0.0",
+  "description": "Best Sugar Daddy Apps - Ranked Reviews of the Top Sugar Daddy Dating Sites and Apps",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.2",
+    "@tailwindcss/vite": "^4.3.0",
+    "astro": "^6.3.1",
+    "tailwindcss": "^4.3.0"
+  }
+}

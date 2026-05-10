@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <rect width="280" height="80" fill="#0d1a2e"/>
+  <text x="20" y="30" font-family="Georgia, serif" font-size="13" font-weight="700" fill="#c9a84c" letter-spacing="2">MILLIONAIRE</text>
+  <text x="20" y="54" font-family="Georgia, serif" font-size="13" font-weight="700" fill="#ffffff" letter-spacing="2">MATCH</text>
+  <rect x="20" y="62" width="40" height="2" fill="#c9a84c" rx="1"/>
+</svg>
