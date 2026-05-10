@@ -40,7 +40,7 @@ Hanker supports every arrangement style — PPM (pay-per-meet), monthly allowanc
 
 Whether you're a sugar daddy seeking meaningful companionship or a sugar baby looking for a genuine benefactor, Hanker's commitment to privacy and authentic connections sets it apart from every other sugar daddy app on the market.`,
     siteUrl: 'https://hanker.app',
-    logo: '/logos/hanker.jpg',
+    logo: 'logos/hanker.jpg',
     rating: 5.0,
     memberCount: 'Growing — first 100,000 members get lifetime free access',
     founded: 2026,
@@ -101,7 +101,7 @@ The platform is renowned for its privacy-first features: Discreet Match™ algor
 
 With 91 million total registered members, 20,000 daily active users, and a 30% female membership — one of the highest ratios in discreet dating — Ashley Madison represents a massive user base. The platform's infrastructure is operated by Ruby Life Inc. (Toronto, Canada) and has been significantly upgraded since its 2015 data breach, with industry-leading security practices now in place.`,
     siteUrl: 'https://ashleymadison.com',
-    logo: '/logos/ashley-madison.svg',
+    logo: 'logos/ashley-madison.svg',
     rating: 4.5,
     memberCount: '91 million+ total registered',
     founded: 2002,
@@ -158,7 +158,7 @@ With 7.8 million registered members and approximately 600,000 active monthly mem
 
 Notable features include a "Let's Meet" roulette-style matching feature, private photo albums, advanced search filters, and a unique sugar baby wishlist — items sugar daddies can purchase directly for sugar babies with a single click. The mobile app (available on both iOS and Android as "SDM") makes sugar daddy dating accessible on the go.`,
     siteUrl: 'https://sugardaddymeet.com',
-    logo: '/logos/sugardaddymeet.png',
+    logo: 'logos/sugardaddymeet.png',
     rating: 4.4,
     memberCount: '7.8 million+ registered, 600K+ active',
     founded: 2007,
@@ -215,7 +215,7 @@ The concept is simple: "Attractive Members" receive and evaluate Date Offers fro
 
 Founded in 2010 and now serving 6.6 million members, WhatsYourPrice is available on both iOS and Android. It's ideal for sugar daddies who want to skip the uncertainty of traditional dating and connect with sugar babies who are genuinely interested in meeting.`,
     siteUrl: 'https://whatsyourprice.com',
-    logo: '/logos/whatsyourprice.svg',
+    logo: 'logos/whatsyourprice.svg',
     rating: 4.3,
     memberCount: '6.6 million+',
     founded: 2010,
@@ -270,7 +270,7 @@ The platform's standout feature is the Certified Millionaire Badge — a verifie
 
 With 5 million+ registered members, 2.6 million from the USA, and 2 million+ monthly conversations, the platform has the scale to deliver genuine connections. Voted "Best of the Web" by Forbes and featured in CNN, ABC, CBS, and the Wall Street Journal, MillionaireMatch® carries the credibility that comes from over two decades of market leadership.`,
     siteUrl: 'https://www.millionairematch.com',
-    logo: '/logos/millionairematch.svg',
+    logo: 'logos/millionairematch.svg',
     rating: 4.2,
     memberCount: '5 million+ registered',
     founded: 2001,
@@ -326,7 +326,7 @@ The platform is known for its commitment to safety and authenticity — every pr
 
 Live streaming functionality built into the platform adds an interactive dimension rarely seen in sugar dating apps. Sugarbook's Student program offers free premium access for verified students, and its VIP tier provides elevated status and features for serious members. Featured in BBC, Business Insider, New York Post, Vice, NBC News, and the Financial Times, Sugarbook carries significant international media credibility.`,
     siteUrl: 'https://sugarbook.app',
-    logo: '/logos/sugarbook.png',
+    logo: 'logos/sugarbook.png',
     rating: 4.0,
     memberCount: '5 million+ worldwide',
     founded: 2016,
@@ -380,7 +380,7 @@ With over 1.2 million active weekly users, Secret Benefits has built a loyal, en
 
 Founded in 2016, Secret Benefits operates on a credit system rather than subscriptions, meaning members pay for what they use. Video chat is built in for face-to-face verification before meeting in person. The platform has no dedicated mobile app, instead offering a polished, mobile-responsive web experience that works seamlessly across all devices.`,
     siteUrl: 'https://secretbenefits.com',
-    logo: '/logos/secret-benefits.svg',
+    logo: 'logos/secret-benefits.svg',
     rating: 3.9,
     memberCount: '1.2 million+ active weekly',
     founded: 2016,
@@ -437,7 +437,7 @@ The app's income verification badge requires documentation of $200,000+ annual i
 
 With 2 million+ global users, a 4.7/5 App Store rating from 104,000+ reviews, and media coverage from CNN, ABC, CNBC, CBS, BBC, Business Insider, and The New York Times — where it was dubbed "Tinder for millionaires" — Luxy is a legitimate premium sugar daddy dating app for serious, high-net-worth individuals.`,
     siteUrl: 'https://onluxy.com',
-    logo: '/logos/luxy.png',
+    logo: 'logos/luxy.png',
     rating: 3.8,
     memberCount: '2 million+ globally',
     founded: 2014,
@@ -492,7 +492,7 @@ Now under the umbrella of Ruby Life Inc. (Toronto, Canada) — the same parent c
 
 With approximately 32,000 total members and 30,000+ active weekly users, Established Men operates as a premium niche platform rather than a mass-market site. Women receive completely free access including messaging, while men purchase credits to communicate. This asymmetric model ensures men connect only with women who are genuinely interested in the Established Men arrangement lifestyle.`,
     siteUrl: 'https://establishedmen.com',
-    logo: '/logos/established-men.png',
+    logo: 'logos/established-men.png',
     rating: 3.5,
     memberCount: '~32,000 total, 30,000+ active weekly',
     founded: 2008,
@@ -546,7 +546,7 @@ With approximately 32,000 total members and 30,000+ active weekly users, Establi
     So the bottom line is, if you are looking for a sugar daddy or baby, DO NOT go to Seeking. They are very ban-happy and ban users for even mentioning words like PPM in their profile or messages. Also, there are no refunds! They will even not refund if they ban you.
     `,
     siteUrl: 'https://seeking.com',
-    logo: '/logos/seeking.svg',
+    logo: 'logos/seeking.svg',
     rating: 1,
     memberCount: '46 million+ in 146 countries',
     founded: 2006,

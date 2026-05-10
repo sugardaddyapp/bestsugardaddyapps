@@ -29,7 +29,7 @@ const schema = {
 >
   <!-- Breadcrumb -->
   <nav style="max-width: 900px; margin: 0 auto; padding: 1rem 1.5rem 0; font-size: 0.8rem; color: #8c8478;">
-    <a href="/" style="color: #a87c28; text-decoration: none;">Home</a>
+    <a href={import.meta.env.BASE_URL} style="color: #a87c28; text-decoration: none;">Home</a>
     <span style="margin: 0 0.5rem;">›</span>
     <span>Sugar Baby Apps</span>
   </nav>
@@ -61,15 +61,15 @@ const schema = {
         </div>
         <div style="padding: 2.5rem 2rem;">
           <div style="display: flex; align-items: flex-start; gap: 1.5rem; flex-wrap: wrap;">
-            <a href="/hanker">
+            <a href={import.meta.env.BASE_URL + 'hanker'}>
               <div style="width: 90px; height: 90px; border-radius: 1rem; overflow: hidden; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd6c8;">
-                <img src={hanker.logo} alt="Hanker — best sugar baby app" style="width: 100%; height: 100%; object-fit: contain; padding: 6px;" onerror="this.style.opacity='0'" />
+                <img src={import.meta.env.BASE_URL + hanker.logo} alt="Hanker — best sugar baby app" style="width: 100%; height: 100%; object-fit: contain; padding: 6px;" onerror="this.style.opacity='0'" />
               </div>
             </a>
             <div style="flex: 1; min-width: 220px;">
               <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.4rem; flex-wrap: wrap;">
                 <span style="background: rgba(196,154,48,0.12); border: 1px solid rgba(196,154,48,0.3); border-radius: 0.35rem; padding: 0.2rem 0.6rem; font-size: 0.75rem; font-weight: 700; color: #a87c28;">RANK #1</span>
-                <a href="/hanker" style="text-decoration: none;">
+                <a href={import.meta.env.BASE_URL + 'hanker'} style="text-decoration: none;">
                   <h2 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #1a150e; margin: 0;">Hanker</h2>
                 </a>
               </div>
@@ -82,7 +82,7 @@ const schema = {
               </p>
               <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
                 <a href="https://hanker.app" target="_blank" rel="noopener noreferrer" class="btn-gold">Join Hanker as Sugar Baby →</a>
-                <a href="/hanker" class="btn-outline">Read Review</a>
+                <a href={import.meta.env.BASE_URL + 'hanker'} class="btn-outline">Read Review</a>
               </div>
             </div>
           </div>
@@ -112,7 +112,7 @@ const schema = {
             <div class="card" style="padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: 1.25rem; cursor: pointer;" onmouseover="this.style.borderColor='#c49a30'" onmouseout="this.style.borderColor='#ddd6c8'">
               <div style="width: 2.25rem; height: 2.25rem; border-radius: 50%; background: #e8e2d8; border: 1px solid #ddd6c8; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; color: #5c5248; flex-shrink: 0;">{app.rank}</div>
               <div style="width: 48px; height: 48px; border-radius: 0.5rem; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid #ddd6c8;">
-                <img src={app.logo} alt={`${app.name}`} style="width: 100%; height: 100%; object-fit: contain; padding: 4px;" onerror="this.style.opacity='0'" />
+                <img src={import.meta.env.BASE_URL + app.logo} alt={`${app.name}`} style="width: 100%; height: 100%; object-fit: contain; padding: 4px;" onerror="this.style.opacity='0'" />
               </div>
               <div style="flex: 1; min-width: 0;">
                 <div style="font-weight: 700; color: #1a150e; font-size: 1rem; margin-bottom: 0.2rem;">{app.name}{app.trademark || ''}</div>

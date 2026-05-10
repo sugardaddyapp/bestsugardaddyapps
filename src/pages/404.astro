@@ -14,8 +14,8 @@ import Layout from '../layouts/Layout.astro';
         This page doesn't exist. Browse our rankings of the top 10 sugar daddy apps and dating sites of 2026.
       </p>
       <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <a href="/" class="btn-gold">View Rankings →</a>
-        <a href="/hanker" class="btn-outline">#1 Hanker Review</a>
+        <a href={import.meta.env.BASE_URL} class="btn-gold">View Rankings →</a>
+        <a href={import.meta.env.BASE_URL + 'hanker'} class="btn-outline">#1 Hanker Review</a>
       </div>
     </div>
   </section>

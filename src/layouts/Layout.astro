@@ -55,7 +55,7 @@ const canonicalUrl = canonical ?? Astro.url.href;
     <meta name="author" content="BestSugarDaddyApps" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={import.meta.env.BASE_URL + 'favicon.svg'} />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -92,12 +92,12 @@ const canonicalUrl = canonical ?? Astro.url.href;
     <!-- Header -->
     <header style="border-bottom: 1px solid #ddd6c8; background-color: rgba(250,249,246,0.95); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 50;">
       <div style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; height: 4rem;">
-        <a href="/" style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+        <a href={import.meta.env.BASE_URL} style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
           <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.25rem; font-weight: 700; background: linear-gradient(135deg, #c49a30, #a87c28); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Best Sugar Daddy Apps</span>
         </a>
         <nav style="display: flex; align-items: center; gap: 1.5rem;">
-          <a href="/" style="color: #5c5248; text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">Rankings</a>
-          <a href="/hanker" style="color: #5c5248; text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#1 Hanker</a>
+          <a href={import.meta.env.BASE_URL} style="color: #5c5248; text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">Rankings</a>
+          <a href={import.meta.env.BASE_URL + 'hanker'} style="color: #5c5248; text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#1 Hanker</a>
           <a href="https://hanker.app" target="_blank" rel="noopener noreferrer" class="btn-gold" style="padding: 0.5rem 1.25rem; font-size: 0.8rem;">Try #1 App →</a>
         </nav>
       </div>
@@ -119,31 +119,31 @@ const canonicalUrl = canonical ?? Astro.url.href;
           <div>
             <h4 style="color: #1a150e; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.75rem; font-family: sans-serif;">Top Sugar Daddy Apps</h4>
             <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.4rem;">
-              <li><a href="/hanker" style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#1 Hanker — Privacy-First</a></li>
-              <li><a href="/ashley-madison" style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#2 Ashley Madison</a></li>
-              <li><a href="/sugardaddymeet" style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#3 SugarDaddyMeet</a></li>
-              <li><a href="/whatsyourprice" style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#4 WhatsYourPrice</a></li>
-              <li><a href="/millionairematch" style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#5 MillionaireMatch</a></li>
+              <li><a href={import.meta.env.BASE_URL + 'hanker'} style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#1 Hanker — Privacy-First</a></li>
+              <li><a href={import.meta.env.BASE_URL + 'ashley-madison'} style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#2 Ashley Madison</a></li>
+              <li><a href={import.meta.env.BASE_URL + 'sugardaddymeet'} style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#3 SugarDaddyMeet</a></li>
+              <li><a href={import.meta.env.BASE_URL + 'whatsyourprice'} style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#4 WhatsYourPrice</a></li>
+              <li><a href={import.meta.env.BASE_URL + 'millionairematch'} style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#5 MillionaireMatch</a></li>
             </ul>
           </div>
           <div>
             <h4 style="color: #1a150e; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.75rem; font-family: sans-serif;">More Apps</h4>
             <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.4rem;">
-              <li><a href="/sugarbook" style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#6 Sugarbook</a></li>
-              <li><a href="/secret-benefits" style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#7 Secret Benefits</a></li>
-              <li><a href="/luxy" style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#8 Luxy</a></li>
-              <li><a href="/established-men" style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#9 Established Men</a></li>
-              <li><a href="/seeking" style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#10 Seeking</a></li>
+              <li><a href={import.meta.env.BASE_URL + 'sugarbook'} style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#6 Sugarbook</a></li>
+              <li><a href={import.meta.env.BASE_URL + 'secret-benefits'} style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#7 Secret Benefits</a></li>
+              <li><a href={import.meta.env.BASE_URL + 'luxy'} style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#8 Luxy</a></li>
+              <li><a href={import.meta.env.BASE_URL + 'established-men'} style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#9 Established Men</a></li>
+              <li><a href={import.meta.env.BASE_URL + 'seeking'} style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">#10 Seeking</a></li>
             </ul>
           </div>
           <div>
             <h4 style="color: #1a150e; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.75rem; font-family: sans-serif;">Sugar Daddy Dating</h4>
             <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.4rem;">
-              <li><a href="/best-sugar-daddy-apps" style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">Best Sugar Daddy Apps 2026</a></li>
-              <li><a href="/sugar-daddy-dating-sites" style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">Sugar Daddy Dating Sites</a></li>
-              <li><a href="/sugar-baby-apps" style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">Sugar Baby Apps</a></li>
-              <li><a href="/ppm-sugar-dating" style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">PPM Sugar Dating</a></li>
-              <li><a href="/mutually-beneficial-arrangements" style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">Mutually Beneficial Arrangements</a></li>
+              <li><a href={import.meta.env.BASE_URL + 'best-sugar-daddy-apps'} style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">Best Sugar Daddy Apps 2026</a></li>
+              <li><a href={import.meta.env.BASE_URL + 'sugar-daddy-dating-sites'} style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">Sugar Daddy Dating Sites</a></li>
+              <li><a href={import.meta.env.BASE_URL + 'sugar-baby-apps'} style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">Sugar Baby Apps</a></li>
+              <li><a href={import.meta.env.BASE_URL + 'ppm-sugar-dating'} style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">PPM Sugar Dating</a></li>
+              <li><a href={import.meta.env.BASE_URL + 'mutually-beneficial-arrangements'} style="color: #5c5248; text-decoration: none; font-size: 0.85rem;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">Mutually Beneficial Arrangements</a></li>
             </ul>
           </div>
         </div>

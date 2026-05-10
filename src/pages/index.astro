@@ -67,10 +67,10 @@ const schema = {
         <div style="padding: 2.5rem 2rem;">
           <div style="display: flex; align-items: flex-start; gap: 1.5rem; flex-wrap: wrap;">
             <!-- Logo -->
-            <a href="/hanker">
+            <a href={import.meta.env.BASE_URL + 'hanker'}>
               <div style="width: 90px; height: 90px; border-radius: 1rem; overflow: hidden; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd6c8;">
                 <img
-                  src={hanker.logo}
+                  src={import.meta.env.BASE_URL + hanker.logo}
                   alt="Hanker — Best Sugar Daddy App"
                   style="width: 100%; height: 100%; object-fit: contain; padding: 6px;"
                   onerror="this.style.opacity='0'"
@@ -81,7 +81,7 @@ const schema = {
             <div style="flex: 1; min-width: 220px;">
               <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.4rem; flex-wrap: wrap;">
                 <span style="background: rgba(196,154,48,0.12); border: 1px solid rgba(196,154,48,0.3); border-radius: 0.35rem; padding: 0.2rem 0.6rem; font-size: 0.75rem; font-weight: 700; color: #a87c28;">RANK #1</span>
-                <a href="/hanker">
+                <a href={import.meta.env.BASE_URL + 'hanker'}>
                   <h2 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #1a150e; margin: 0;">Hanker</h2>
                 </a>
               </div>
@@ -96,7 +96,7 @@ const schema = {
                 <a href="https://hanker.app" target="_blank" rel="noopener noreferrer" class="btn-gold">
                   Visit Hanker →
                 </a>
-                <a href="/hanker" class="btn-outline">Read Review</a>
+                <a href={import.meta.env.BASE_URL + 'hanker'} class="btn-outline">Read Review</a>
               </div>
             </div>
           </div>
@@ -136,7 +136,7 @@ const schema = {
 
       <div style="display: flex; flex-direction: column; gap: 0.75rem;">
         {otherApps.map((app) => (
-          <a href={`/${app.slug}`} style="text-decoration: none;" aria-label={`Read review of ${app.name}, ranked #${app.rank} sugar daddy app`}>
+          <a href={import.meta.env.BASE_URL + app.slug} style="text-decoration: none;" aria-label={`Read review of ${app.name}, ranked #${app.rank} sugar daddy app`}>
             <div class="card" style="padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: 1.25rem; cursor: pointer;" onmouseover="this.style.borderColor='#c49a30'" onmouseout="this.style.borderColor='#ddd6c8'">
               <!-- Rank -->
               <div style="width: 2.25rem; height: 2.25rem; border-radius: 50%; background: #e8e2d8; border: 1px solid #ddd6c8; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; color: #5c5248; flex-shrink: 0; font-family: sans-serif;">
@@ -146,7 +146,7 @@ const schema = {
               <!-- Logo -->
               <div style="width: 48px; height: 48px; border-radius: 0.5rem; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid #ddd6c8;">
                 <img
-                  src={app.logo}
+                  src={import.meta.env.BASE_URL + app.logo}
                   alt={`${app.name} logo`}
                   style="width: 100%; height: 100%; object-fit: contain; padding: 4px;"
                   onerror="this.style.opacity='0'"
@@ -192,7 +192,7 @@ const schema = {
         Modern sugar daddy dating encompasses a range of arrangement styles: PPM (pay-per-meet) arrangements, monthly allowances, travel companionship, mentorship, and long-term relationships. The best sugar daddy apps make it easy to find compatible partners who share the same vision for the arrangement.
       </p>
       <p>
-        The sugar daddy dating landscape has evolved significantly in recent years. Privacy concerns, regulatory pressure (including FOSTA-SESTA in the US), and the demand for more authentic connections have driven innovation. This is why platforms like <a href="/hanker" style="color: #a87c28; text-decoration: none;">Hanker</a> — built privacy-first with servers outside US jurisdiction — represent the next generation of sugar daddy dating apps.
+        The sugar daddy dating landscape has evolved significantly in recent years. Privacy concerns, regulatory pressure (including FOSTA-SESTA in the US), and the demand for more authentic connections have driven innovation. This is why platforms like <a href={import.meta.env.BASE_URL + 'hanker'} style="color: #a87c28; text-decoration: none;">Hanker</a> — built privacy-first with servers outside US jurisdiction — represent the next generation of sugar daddy dating apps.
       </p>
     </div>
 
