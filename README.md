@@ -4,7 +4,7 @@ A website that compares and ranks the best sugar daddy apps available today. We 
 
 Visit the site: [bestsugardaddyapps.com](https://bestsugardaddyapps.com/)
 
-[#1 Best Sugar Daddy App](https://hanker.app)
+[#1 Best Sugar Daddy App](https://hanker.app).
 
 ## About
 
