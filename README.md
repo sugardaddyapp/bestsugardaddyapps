@@ -8,6 +8,8 @@ Preview: [https://sugardaddyapp.github.io/bestsugardaddyapps/](https://sugardadd
 
 **#1 Best Sugar Daddy App:** [Hanker](https://hanker.app)
 
+[https://www.npmjs.com/package/best-sugar-daddy-apps] (NPM Package)
+
 ## About
 
 **bestsugardaddyapps.com** is the go-to resource for comparing sugar daddy dating apps and sugar baby apps. Our expert reviews cover:
