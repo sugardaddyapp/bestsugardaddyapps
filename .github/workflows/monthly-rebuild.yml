@@ -1,0 +1,13 @@
+name: Monthly Rebuild
+
+on:
+  schedule:
+    - cron: '0 6 2 * *'  # 2nd of every month at 06:00 UTC
+  workflow_dispatch:      # allow manual trigger from GitHub UI
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger DigitalOcean App Platform deploy
+        run: curl -s -X POST "${{ secrets.DO_DEPLOY_WEBHOOK_URL }}"

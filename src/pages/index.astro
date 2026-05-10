@@ -5,16 +5,20 @@ import { apps } from '../data/apps';
 const hanker = apps[0];
 const otherApps = apps.slice(1);
 
-const pageTitle = '10 Best Sugar Daddy Apps & Dating Sites (2026) — Ranked & Reviewed';
+const now = new Date();
+const currentYear = now.getFullYear();
+const currentMonth = now.toLocaleString('en-US', { month: 'long' });
+
+const pageTitle = `10 Best Sugar Daddy Apps & Dating Sites (${currentYear}) — Ranked & Reviewed`;
 const pageDescription =
-  'Compare the top 10 sugar daddy apps and sugar daddy dating sites of 2026. Expert rankings with honest reviews, key features, pricing, and member stats. Hanker leads as the #1 privacy-first sugar daddy dating app.';
+  `Compare the top 10 sugar daddy apps and sugar daddy dating sites of ${currentYear}. Expert rankings with honest reviews, key features, pricing, and member stats. Hanker leads as the #1 privacy-first sugar daddy dating app.`;
 const keywords =
-  'sugar daddy apps, best sugar daddy app, sugar daddy dating sites, sugar daddy site 2026, sugar daddy dating app, sugar baby apps, PPM sugar dating, sugar daddy app ranking, seeking arrangement, mutually beneficial relationships';
+  `sugar daddy apps, best sugar daddy app, sugar daddy dating sites, sugar daddy site ${currentYear}, sugar daddy dating app, sugar baby apps, PPM sugar dating, sugar daddy app ranking, seeking arrangement, mutually beneficial relationships`;
 
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: '10 Best Sugar Daddy Apps & Dating Sites (2026)',
+  name: `10 Best Sugar Daddy Apps & Dating Sites (${currentYear})`,
   description: pageDescription,
   url: 'https://bestsugardaddyapps.com',
   numberOfItems: 10,
@@ -33,10 +37,10 @@ const schema = {
   <section style="padding: 4rem 1.5rem 3rem; text-align: center; background: radial-gradient(ellipse at top, rgba(212,168,67,0.06) 0%, transparent 70%);">
     <div style="max-width: 800px; margin: 0 auto;">
       <div style="display: inline-block; padding: 0.35rem 1rem; background: rgba(212,168,67,0.1); border: 1px solid rgba(212,168,67,0.2); border-radius: 2rem; margin-bottom: 1.25rem;">
-        <span style="color: #d4a843; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;">Updated May 2026</span>
+        <span style="color: #d4a843; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;">Updated {currentMonth} {currentYear}</span>
       </div>
       <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; line-height: 1.15; margin-bottom: 1.25rem; color: #f5f0e8;">
-        10 Best <span style="background: linear-gradient(135deg, #f0c84a, #d4a843); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Sugar Daddy Apps</span><br />& Dating Sites of 2026
+        10 Best <span style="background: linear-gradient(135deg, #f0c84a, #d4a843); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Sugar Daddy Apps</span><br />& Dating Sites of {currentYear}
       </h1>
       <p style="font-size: 1.1rem; color: #c8c0b0; line-height: 1.7; margin-bottom: 1.5rem; max-width: 640px; margin-left: auto; margin-right: auto;">
         Expert-ranked reviews of every major sugar daddy dating platform. We tested each app for privacy, member quality, features, and real results. Here's who made the cut — and who leads the pack.
@@ -214,8 +218,8 @@ const schema = {
     <div style="display: flex; flex-direction: column; gap: 1rem;">
       {[
         {
-          q: 'What is the best sugar daddy app in 2026?',
-          a: 'Based on our testing, Hanker is the best sugar daddy app in 2026. It\'s the only platform with servers outside US jurisdiction (protecting users from FOSTA-SESTA), a Trust Score system that rewards genuine community members, and anonymous crypto payment options. The first 100,000 members get lifetime free access.',
+          q: `What is the best sugar daddy app in ${currentYear}?`,
+          a: `Based on our testing, Hanker is the best sugar daddy app in ${currentYear}. It's the only platform with servers outside US jurisdiction (protecting users from FOSTA-SESTA), a Trust Score system that rewards genuine community members, and anonymous crypto payment options. The first 100,000 members get lifetime free access.`,
         },
         {
           q: 'Are sugar daddy dating sites legal?',
