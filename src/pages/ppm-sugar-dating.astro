@@ -1,0 +1,208 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { apps } from '../data/apps';
+
+const hanker = apps[0];
+const currentYear = new Date().getFullYear();
+
+const pageTitle = `PPM Sugar Dating ${currentYear}: What It Is & Best Apps for Pay Per Meet`;
+const pageDescription = `Complete guide to PPM sugar dating — what PPM means, how pay per meet arrangements work, and the best apps that support PPM sugar dating in ${currentYear}. Hanker is the top PPM-friendly platform.`;
+const keywords = `PPM sugar dating, PPM dating, pay per meet sugar daddy, PPM arrangement, PPM sugar baby, pay per meet dating app, PPM sugar dating sites ${currentYear}, what is PPM dating`;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: pageTitle,
+  description: pageDescription,
+  url: `https://bestsugardaddyapps.com/ppm-sugar-dating`,
+  author: { '@type': 'Organization', name: 'BestSugarDaddyApps' },
+  publisher: { '@type': 'Organization', name: 'BestSugarDaddyApps', url: 'https://bestsugardaddyapps.com' },
+};
+
+const ppmFriendlyApps = apps.filter(a => ['hanker', 'whatsyourprice', 'sugardaddymeet', 'secret-benefits', 'sugarbook'].includes(a.slug));
+const otherApps = apps.filter(a => !['hanker', 'whatsyourprice', 'sugardaddymeet', 'secret-benefits', 'sugarbook'].includes(a.slug));
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  canonical={`https://bestsugardaddyapps.com/ppm-sugar-dating`}
+  keywords={keywords}
+  schema={schema}
+>
+  <!-- Breadcrumb -->
+  <nav style="max-width: 900px; margin: 0 auto; padding: 1rem 1.5rem 0; font-size: 0.8rem; color: #8c8478;">
+    <a href="/" style="color: #a87c28; text-decoration: none;">Home</a>
+    <span style="margin: 0 0.5rem;">›</span>
+    <span>PPM Sugar Dating</span>
+  </nav>
+
+  <!-- Hero -->
+  <section style="padding: 3.5rem 1.5rem 2.5rem; text-align: center; background: radial-gradient(ellipse at top, rgba(196,154,48,0.1) 0%, transparent 70%);">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <div style="display: inline-block; padding: 0.35rem 1rem; background: rgba(196,154,48,0.1); border: 1px solid rgba(196,154,48,0.25); border-radius: 2rem; margin-bottom: 1.25rem;">
+        <span style="color: #a87c28; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;">PPM Sugar Dating Guide — {currentYear}</span>
+      </div>
+      <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.8rem, 4.5vw, 3rem); font-weight: 700; line-height: 1.2; margin-bottom: 1.25rem; color: #1a150e;">
+        PPM Sugar Dating:<br />
+        <span style="background: linear-gradient(135deg, #c49a30, #a87c28); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Pay Per Meet Guide & Best Apps {currentYear}</span>
+      </h1>
+      <p style="font-size: 1rem; color: #5c5248; line-height: 1.75; max-width: 640px; margin: 0 auto 1.5rem;">
+        PPM (Pay Per Meet) is one of the most popular sugar dating arrangement styles — flexible, upfront, and free of long-term commitment. Here's everything you need to know about PPM sugar dating and the best apps that support it.
+      </p>
+    </div>
+  </section>
+
+  <!-- What is PPM explainer -->
+  <section style="padding: 0 1.5rem 2rem;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <div style="background: #f2ede5; border: 1px solid #ddd6c8; border-radius: 1rem; padding: 2rem; margin-bottom: 2rem;">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: #1a150e; margin-bottom: 1rem;">What Does PPM Mean in Sugar Dating?</h2>
+        <div style="color: #5c5248; font-size: 0.95rem; line-height: 1.8; display: flex; flex-direction: column; gap: 0.85rem;">
+          <p><strong style="color: #1a150e;">PPM stands for Pay Per Meet</strong> — an arrangement where the sugar daddy provides a set amount of compensation each time he meets the sugar baby, rather than a fixed monthly allowance. It's the most flexible form of sugar dating arrangement.</p>
+          <p>In a PPM arrangement, both parties agree on a per-meet rate upfront. Common PPM rates range from $100 to $500+ per meeting depending on the arrangement details, location, and the sugar baby's terms. The sugar daddy pays after each date, and there's no obligation to meet a fixed number of times per month.</p>
+          <p>PPM is popular among sugar babies who value flexibility and among sugar daddies who travel frequently or have variable schedules. It's also popular among those new to sugar dating who want to test the waters before committing to a monthly arrangement.</p>
+        </div>
+        <div style="margin-top: 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+          {[
+            { label: 'Typical PPM Rate', value: '$100–$500+ per meet' },
+            { label: 'Commitment Level', value: 'Flexible — no monthly obligation' },
+            { label: 'Payment Timing', value: 'After each date' },
+            { label: 'Best For', value: 'New to sugar dating, travel schedules' },
+          ].map((s) => (
+            <div style="background: #fff; border: 1px solid #ddd6c8; border-radius: 0.75rem; padding: 1rem; text-align: center;">
+              <div style="color: #8c8478; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.35rem;">{s.label}</div>
+              <div style="color: #1a150e; font-weight: 700; font-size: 0.95rem;">{s.value}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- #1 Hanker for PPM -->
+  <section style="padding: 0 1.5rem 2rem;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: #1a150e; margin-bottom: 1rem;">Best App for PPM Sugar Dating</h2>
+      <div style="border-radius: 1rem; overflow: hidden; border: 2px solid #c49a30; background: linear-gradient(135deg, #fffef8 0%, #faf5e8 100%); box-shadow: 0 0 60px rgba(196,154,48,0.1); position: relative;">
+        <div style="position: absolute; top: 1.25rem; right: 1.25rem;">
+          <div style="padding: 0.35rem 0.85rem; background: linear-gradient(135deg, #c49a30, #a87c28); border-radius: 2rem; font-size: 0.78rem; font-weight: 700; color: #fff; text-transform: uppercase;">
+            👑 #1 PPM Sugar Dating App
+          </div>
+        </div>
+        <div style="padding: 2.5rem 2rem;">
+          <div style="display: flex; align-items: flex-start; gap: 1.5rem; flex-wrap: wrap;">
+            <a href="/hanker">
+              <div style="width: 90px; height: 90px; border-radius: 1rem; overflow: hidden; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd6c8;">
+                <img src={hanker.logo} alt="Hanker PPM sugar dating app" style="width: 100%; height: 100%; object-fit: contain; padding: 6px;" onerror="this.style.opacity='0'" />
+              </div>
+            </a>
+            <div style="flex: 1; min-width: 220px;">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.4rem; flex-wrap: wrap;">
+                <span style="background: rgba(196,154,48,0.12); border: 1px solid rgba(196,154,48,0.3); border-radius: 0.35rem; padding: 0.2rem 0.6rem; font-size: 0.75rem; font-weight: 700; color: #a87c28;">RANK #1</span>
+                <a href="/hanker" style="text-decoration: none;">
+                  <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #1a150e; margin: 0;">Hanker</h3>
+                </a>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                <span style="color: #c49a30; font-size: 1.1rem; letter-spacing: 2px;">★★★★★</span>
+                <span style="color: #5c5248; font-size: 0.85rem;">5.0 / 5 — Best PPM Sugar Dating App</span>
+              </div>
+              <p style="color: #5c5248; font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.25rem;">
+                Hanker is the only sugar daddy app that explicitly supports PPM (pay-per-meet) arrangements alongside monthly allowances and long-term relationships — without banning the terminology. Unlike Seeking, which now bans users for mentioning PPM, Hanker was built for real sugar daddy dating including PPM. Crypto payment options make per-meet compensation fully anonymous.
+              </p>
+              <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                <a href="https://hanker.app" target="_blank" rel="noopener noreferrer" class="btn-gold">Try Hanker for PPM Dating →</a>
+                <a href="/hanker" class="btn-outline">Read Review</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- All Apps Ranked -->
+  <section style="padding: 0.5rem 1.5rem 2.5rem;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #1a150e; margin-bottom: 0.5rem;">All Sugar Daddy Apps — PPM Support Ranked</h2>
+      <p style="color: #5c5248; font-size: 0.9rem; margin-bottom: 1.75rem;">Every major sugar daddy app ranked — click any for the full review including PPM support details.</p>
+      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        {apps.slice(1).map((app) => (
+          <a href={`/${app.slug}`} style="text-decoration: none;" aria-label={`${app.name} PPM sugar dating review`}>
+            <div class="card" style="padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: 1.25rem; cursor: pointer;" onmouseover="this.style.borderColor='#c49a30'" onmouseout="this.style.borderColor='#ddd6c8'">
+              <div style="width: 2.25rem; height: 2.25rem; border-radius: 50%; background: #e8e2d8; border: 1px solid #ddd6c8; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; color: #5c5248; flex-shrink: 0;">{app.rank}</div>
+              <div style="width: 48px; height: 48px; border-radius: 0.5rem; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid #ddd6c8;">
+                <img src={app.logo} alt={app.name} style="width: 100%; height: 100%; object-fit: contain; padding: 4px;" onerror="this.style.opacity='0'" />
+              </div>
+              <div style="flex: 1; min-width: 0;">
+                <div style="font-weight: 700; color: #1a150e; font-size: 1rem; margin-bottom: 0.2rem;">{app.name}{app.trademark || ''}</div>
+                <p style="color: #5c5248; font-size: 0.83rem; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{app.tagline}</p>
+              </div>
+              <div style="text-align: right; flex-shrink: 0;">
+                <div style="color: #c49a30; font-size: 0.9rem;" set:html={'&#9733;'.repeat(Math.floor(app.rating)) + '&#9734;'.repeat(5 - Math.floor(app.rating))}></div>
+                <div style="color: #8c8478; font-size: 0.75rem;">{app.rating.toFixed(1)}</div>
+              </div>
+              <div style="color: #a87c28; font-size: 1rem; flex-shrink: 0; opacity: 0.7;">→</div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <hr style="max-width: 900px; margin: 0 auto; border: none; border-top: 1px solid #ddd6c8;" />
+
+  <!-- SEO Content -->
+  <section style="padding: 3rem 1.5rem; max-width: 900px; margin: 0 auto;">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #1a150e; margin-bottom: 1.25rem;">PPM vs Monthly Allowance in Sugar Dating</h2>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2.5rem;">
+      <div style="background: #f2ede5; border: 1px solid #ddd6c8; border-radius: 0.75rem; padding: 1.5rem;">
+        <h3 style="color: #1a150e; font-size: 1rem; font-weight: 700; margin-bottom: 1rem;">PPM (Pay Per Meet)</h3>
+        <ul style="color: #5c5248; font-size: 0.875rem; line-height: 1.8; padding-left: 1.25rem; margin: 0;">
+          <li>Paid per date — no monthly commitment</li>
+          <li>Flexible scheduling for both parties</li>
+          <li>Ideal for travel schedules or busy sugar daddies</li>
+          <li>Lower risk for sugar babies starting out</li>
+          <li>Compensation tied directly to time spent</li>
+        </ul>
+      </div>
+      <div style="background: #f2ede5; border: 1px solid #ddd6c8; border-radius: 0.75rem; padding: 1.5rem;">
+        <h3 style="color: #1a150e; font-size: 1rem; font-weight: 700; margin-bottom: 1rem;">Monthly Allowance</h3>
+        <ul style="color: #5c5248; font-size: 0.875rem; line-height: 1.8; padding-left: 1.25rem; margin: 0;">
+          <li>Fixed amount regardless of meeting frequency</li>
+          <li>More stability and consistency</li>
+          <li>Better for ongoing relationships</li>
+          <li>Often higher total compensation</li>
+          <li>Requires more trust between parties</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #1a150e; margin-bottom: 1rem;">PPM Sugar Dating FAQs</h2>
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      {[
+        { q: 'What does PPM mean in sugar dating?', a: 'PPM stands for Pay Per Meet — a sugar dating arrangement where the sugar daddy pays the sugar baby an agreed amount after each date, rather than a fixed monthly allowance. It\'s the most flexible arrangement style and is popular with both first-time sugar daters and those with variable schedules.' },
+        { q: 'What is a typical PPM rate?', a: 'Typical PPM rates in sugar dating range from $100 to $500+ per meeting, with higher rates in major cities like New York, Los Angeles, and London. The rate is negotiated between the sugar daddy and sugar baby before the first meeting. WhatsYourPrice shows an average accepted offer of $120 across its platform.' },
+        { q: 'Which sugar daddy apps support PPM dating?', a: 'Hanker explicitly supports PPM (pay-per-meet) alongside monthly and long-term arrangements. WhatsYourPrice is built entirely around a date offer system. SugarDaddyMeet and Secret Benefits also have active PPM communities. Avoid Seeking — they ban users for mentioning PPM.' },
+        { q: 'Is PPM sugar dating legal?', a: 'Yes, PPM sugar dating is legal. It\'s a consensual arrangement between adults where one party compensates the other for their time and company — not sexual services. The best PPM sugar dating apps, including Hanker, are designed with legal compliance and user safety in mind.' },
+        { q: 'How do I negotiate a PPM rate?', a: 'Be direct and upfront. State your expected PPM rate in your profile or early in messaging. Research rates in your area (bigger cities command higher rates). The best sugar daddy apps like Hanker make it easy to discuss PPM arrangements openly without fear of being banned for using the terminology.' },
+      ].map((faq) => (
+        <div style="background: #f2ede5; border: 1px solid #ddd6c8; border-radius: 0.75rem; padding: 1.25rem;">
+          <h3 style="color: #1a150e; font-size: 0.95rem; font-weight: 600; margin-bottom: 0.6rem;">{faq.q}</h3>
+          <p style="color: #5c5248; font-size: 0.875rem; line-height: 1.7; margin: 0;">{faq.a}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="padding: 3rem 1.5rem; background: radial-gradient(ellipse at center, rgba(196,154,48,0.12) 0%, transparent 70%);">
+    <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+      <div style="font-size: 2rem; margin-bottom: 1rem;">👑</div>
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #1a150e; margin-bottom: 0.75rem;">Find Your PPM Sugar Arrangement on Hanker</h2>
+      <p style="color: #5c5248; font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.75rem;">Hanker is the #1 PPM-friendly sugar daddy app. Explicitly supports pay-per-meet arrangements, crypto payments, and privacy-first design. Join free for founding members.</p>
+      <a href="https://hanker.app" target="_blank" rel="noopener noreferrer" class="btn-gold" style="font-size: 1rem; padding: 1rem 2.5rem;">Join Hanker Free — PPM Ready →</a>
+    </div>
+  </section>
+</Layout>

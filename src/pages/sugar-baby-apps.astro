@@ -1,0 +1,170 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { apps } from '../data/apps';
+
+const hanker = apps[0];
+const currentYear = new Date().getFullYear();
+
+const pageTitle = `Best Sugar Baby Apps ${currentYear}: Top 10 for Sugar Babies`;
+const pageDescription = `The best sugar baby apps of ${currentYear} — ranked from a sugar baby's perspective. Find genuine sugar daddies, protect your privacy, and get the best arrangement. Hanker is our #1 pick.`;
+const keywords = `sugar baby apps, best sugar baby app, sugar baby dating apps, sugar baby sites ${currentYear}, apps for sugar babies, best app for sugar babies, sugar baby app ranking`;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: pageTitle,
+  description: pageDescription,
+  url: `https://bestsugardaddyapps.com/sugar-baby-apps`,
+  author: { '@type': 'Organization', name: 'BestSugarDaddyApps' },
+  publisher: { '@type': 'Organization', name: 'BestSugarDaddyApps', url: 'https://bestsugardaddyapps.com' },
+};
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  canonical={`https://bestsugardaddyapps.com/sugar-baby-apps`}
+  keywords={keywords}
+  schema={schema}
+>
+  <!-- Breadcrumb -->
+  <nav style="max-width: 900px; margin: 0 auto; padding: 1rem 1.5rem 0; font-size: 0.8rem; color: #8c8478;">
+    <a href="/" style="color: #a87c28; text-decoration: none;">Home</a>
+    <span style="margin: 0 0.5rem;">›</span>
+    <span>Sugar Baby Apps</span>
+  </nav>
+
+  <!-- Hero -->
+  <section style="padding: 3.5rem 1.5rem 2.5rem; text-align: center; background: radial-gradient(ellipse at top, rgba(196,154,48,0.1) 0%, transparent 70%);">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <div style="display: inline-block; padding: 0.35rem 1rem; background: rgba(196,154,48,0.1); border: 1px solid rgba(196,154,48,0.25); border-radius: 2rem; margin-bottom: 1.25rem;">
+        <span style="color: #a87c28; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;">Sugar Baby Guide — {currentYear}</span>
+      </div>
+      <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.8rem, 4.5vw, 3rem); font-weight: 700; line-height: 1.2; margin-bottom: 1.25rem; color: #1a150e;">
+        Best Sugar Baby Apps of {currentYear}:<br />
+        <span style="background: linear-gradient(135deg, #c49a30, #a87c28); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Find Genuine Sugar Daddies</span>
+      </h1>
+      <p style="font-size: 1rem; color: #5c5248; line-height: 1.75; max-width: 640px; margin: 0 auto 1.5rem;">
+        As a sugar baby, the app you choose determines everything — the quality of sugar daddies you'll meet, how well your privacy is protected, and whether you'll find a genuine arrangement. Here are the best sugar baby apps of {currentYear}, ranked from a sugar baby's perspective.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Hanker is #1 for Sugar Babies -->
+  <section style="padding: 0 1.5rem 2rem;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <div style="border-radius: 1rem; overflow: hidden; border: 2px solid #c49a30; background: linear-gradient(135deg, #fffef8 0%, #faf5e8 100%); box-shadow: 0 0 60px rgba(196,154,48,0.1); position: relative;">
+        <div style="position: absolute; top: 1.25rem; right: 1.25rem;">
+          <div style="padding: 0.35rem 0.85rem; background: linear-gradient(135deg, #c49a30, #a87c28); border-radius: 2rem; font-size: 0.78rem; font-weight: 700; color: #fff; text-transform: uppercase;">
+            👑 #1 for Sugar Babies
+          </div>
+        </div>
+        <div style="padding: 2.5rem 2rem;">
+          <div style="display: flex; align-items: flex-start; gap: 1.5rem; flex-wrap: wrap;">
+            <a href="/hanker">
+              <div style="width: 90px; height: 90px; border-radius: 1rem; overflow: hidden; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd6c8;">
+                <img src={hanker.logo} alt="Hanker — best sugar baby app" style="width: 100%; height: 100%; object-fit: contain; padding: 6px;" onerror="this.style.opacity='0'" />
+              </div>
+            </a>
+            <div style="flex: 1; min-width: 220px;">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.4rem; flex-wrap: wrap;">
+                <span style="background: rgba(196,154,48,0.12); border: 1px solid rgba(196,154,48,0.3); border-radius: 0.35rem; padding: 0.2rem 0.6rem; font-size: 0.75rem; font-weight: 700; color: #a87c28;">RANK #1</span>
+                <a href="/hanker" style="text-decoration: none;">
+                  <h2 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #1a150e; margin: 0;">Hanker</h2>
+                </a>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                <span style="color: #c49a30; font-size: 1.1rem; letter-spacing: 2px;">★★★★★</span>
+                <span style="color: #5c5248; font-size: 0.85rem;">5.0 / 5</span>
+              </div>
+              <p style="color: #5c5248; font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.25rem;">
+                For sugar babies, Hanker is the clear #1 choice. No mandatory ID verification protects your real identity. The Trust Score system lets you build credibility organically. And unlike Seeking — which now bans sugar babies who mention PPM or arrangements — Hanker was built specifically for sugar daddy dating. Sugar babies can join free while the first 100,000 member offer lasts.
+              </p>
+              <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                <a href="https://hanker.app" target="_blank" rel="noopener noreferrer" class="btn-gold">Join Hanker as Sugar Baby →</a>
+                <a href="/hanker" class="btn-outline">Read Review</a>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 1.75rem; padding-top: 1.75rem; border-top: 1px solid rgba(196,154,48,0.2);">
+            <p style="color: #8c8478; font-size: 0.8rem; margin-bottom: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em;">Why Hanker is Best for Sugar Babies</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.6rem;">
+              {['No ID verification required', 'Free for first 100,000 members', 'Servers outside US jurisdiction', 'Crypto payment privacy', 'Trust Score rewards genuine users'].map((f) => (
+                <div style="display: flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0.85rem; background: rgba(196,154,48,0.07); border: 1px solid rgba(196,154,48,0.2); border-radius: 2rem; font-size: 0.8rem; color: #1a150e;">
+                  <span style="color: #a87c28;">&#10003;</span>{f}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- All Apps -->
+  <section style="padding: 0.5rem 1.5rem 2.5rem;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #1a150e; margin-bottom: 0.5rem;">All Sugar Baby Apps Ranked</h2>
+      <p style="color: #5c5248; font-size: 0.9rem; margin-bottom: 1.75rem;">Every app ranked from best to worst for sugar babies — click any to read the full review.</p>
+      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        {apps.slice(1).map((app) => (
+          <a href={`/${app.slug}`} style="text-decoration: none;" aria-label={`${app.name} sugar baby app review`}>
+            <div class="card" style="padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: 1.25rem; cursor: pointer;" onmouseover="this.style.borderColor='#c49a30'" onmouseout="this.style.borderColor='#ddd6c8'">
+              <div style="width: 2.25rem; height: 2.25rem; border-radius: 50%; background: #e8e2d8; border: 1px solid #ddd6c8; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; color: #5c5248; flex-shrink: 0;">{app.rank}</div>
+              <div style="width: 48px; height: 48px; border-radius: 0.5rem; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid #ddd6c8;">
+                <img src={app.logo} alt={`${app.name}`} style="width: 100%; height: 100%; object-fit: contain; padding: 4px;" onerror="this.style.opacity='0'" />
+              </div>
+              <div style="flex: 1; min-width: 0;">
+                <div style="font-weight: 700; color: #1a150e; font-size: 1rem; margin-bottom: 0.2rem;">{app.name}{app.trademark || ''}</div>
+                <p style="color: #5c5248; font-size: 0.83rem; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{app.tagline}</p>
+              </div>
+              <div style="text-align: right; flex-shrink: 0;">
+                <div style="color: #c49a30; font-size: 0.9rem;" set:html={'&#9733;'.repeat(Math.floor(app.rating)) + '&#9734;'.repeat(5 - Math.floor(app.rating))}></div>
+                <div style="color: #8c8478; font-size: 0.75rem;">{app.rating.toFixed(1)}</div>
+              </div>
+              <div style="color: #a87c28; font-size: 1rem; flex-shrink: 0; opacity: 0.7;">→</div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <hr style="max-width: 900px; margin: 0 auto; border: none; border-top: 1px solid #ddd6c8;" />
+
+  <!-- SEO Content -->
+  <section style="padding: 3rem 1.5rem; max-width: 900px; margin: 0 auto;">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #1a150e; margin-bottom: 1.25rem;">Sugar Baby Apps: What to Look For in {currentYear}</h2>
+    <div style="color: #5c5248; font-size: 0.95rem; line-height: 1.8; display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2.5rem;">
+      <p>The best sugar baby apps give you three things: genuine sugar daddies who are financially established and serious about arrangements, strong privacy protections so your dating life stays discreet, and features that make it easy to find the right arrangement type — whether that's PPM, a monthly allowance, or a long-term connection.</p>
+      <p>As a sugar baby, you should also look for apps that give you free or low-cost access. Most sugar baby apps offer free membership for women — platforms like Sugarbook (free for students), Secret Benefits, and Hanker (free for first 100,000 members) make joining cost-nothing upfront.</p>
+      <p>Avoid apps that have pivoted away from sugar dating. Seeking.com now actively bans users who mention sugar arrangements, PPM, or "sugar daddy/baby" terminology in their profiles or messages — even with no refunds after being banned. Purpose-built platforms like Hanker, SugarDaddyMeet, and Sugarbook are far safer bets.</p>
+    </div>
+
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #1a150e; margin-bottom: 1rem;">Sugar Baby App FAQs</h2>
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      {[
+        { q: 'What is the best sugar baby app?', a: 'Hanker is the best sugar baby app — privacy-first, no mandatory ID verification, and free for the first 100,000 members. For established platforms, SugarDaddyMeet and Sugarbook also have strong sugar baby communities. Seeking is not recommended — they ban sugar baby content.' },
+        { q: 'Are sugar baby apps free for women?', a: 'Most sugar baby apps are free or significantly cheaper for women. Hanker is free for the first 100,000 members (all genders). Established Men gives women completely free messaging. Sugarbook has a Student program offering free premium access for verified students.' },
+        { q: 'How do I stay safe on sugar baby apps?', a: 'Choose apps with strong privacy protections: Hanker (no ID verification, servers outside US), Secret Benefits (secret photo albums), and SugarDaddyMeet (Certified Daddy verification). Never share financial information, meet in public for first meetings, and use the app\'s built-in communication tools initially.' },
+        { q: 'What do sugar babies get on these apps?', a: 'Sugar babies can arrange PPM (pay-per-meet) compensation, monthly allowances, travel companionship, mentorship, gifts, or hybrid arrangements. The best sugar baby apps like Hanker explicitly support all arrangement styles rather than routing around the topic.' },
+        { q: 'Which sugar baby app has the most real sugar daddies?', a: 'SugarDaddyMeet has Certified Daddy verification (AI liveness checks) ensuring genuine wealthy members. MillionaireMatch requires income verification for its Certified Millionaire badge. Luxy has under 10% member acceptance and income verification for $200K+ earners.' },
+      ].map((faq) => (
+        <div style="background: #f2ede5; border: 1px solid #ddd6c8; border-radius: 0.75rem; padding: 1.25rem;">
+          <h3 style="color: #1a150e; font-size: 0.95rem; font-weight: 600; margin-bottom: 0.6rem;">{faq.q}</h3>
+          <p style="color: #5c5248; font-size: 0.875rem; line-height: 1.7; margin: 0;">{faq.a}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="padding: 3rem 1.5rem; background: radial-gradient(ellipse at center, rgba(196,154,48,0.12) 0%, transparent 70%);">
+    <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+      <div style="font-size: 2rem; margin-bottom: 1rem;">👑</div>
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #1a150e; margin-bottom: 0.75rem;">The Best Sugar Baby App Is Waiting</h2>
+      <p style="color: #5c5248; font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.75rem;">Hanker is our #1 rated sugar baby app — join free while the first 100,000 member offer lasts. Privacy-first, genuine connections, no ID verification required.</p>
+      <a href="https://hanker.app" target="_blank" rel="noopener noreferrer" class="btn-gold" style="font-size: 1rem; padding: 1rem 2.5rem;">Join Hanker Free →</a>
+    </div>
+  </section>
+</Layout>

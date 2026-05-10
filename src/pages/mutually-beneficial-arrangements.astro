@@ -1,0 +1,198 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { apps } from '../data/apps';
+
+const hanker = apps[0];
+const currentYear = new Date().getFullYear();
+
+const pageTitle = `Mutually Beneficial Arrangements ${currentYear}: Guide & Best Dating Apps`;
+const pageDescription = `Everything about mutually beneficial arrangements in ${currentYear} — what they are, how they work, arrangement types, and the best apps for finding genuine MBAs. Hanker leads our rankings.`;
+const keywords = `mutually beneficial arrangements, mutually beneficial relationship, mutually beneficial dating, MBA sugar dating, arrangement dating ${currentYear}, mutually beneficial arrangement apps, sugar arrangement dating`;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: pageTitle,
+  description: pageDescription,
+  url: `https://bestsugardaddyapps.com/mutually-beneficial-arrangements`,
+  author: { '@type': 'Organization', name: 'BestSugarDaddyApps' },
+  publisher: { '@type': 'Organization', name: 'BestSugarDaddyApps', url: 'https://bestsugardaddyapps.com' },
+};
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  canonical={`https://bestsugardaddyapps.com/mutually-beneficial-arrangements`}
+  keywords={keywords}
+  schema={schema}
+>
+  <!-- Breadcrumb -->
+  <nav style="max-width: 900px; margin: 0 auto; padding: 1rem 1.5rem 0; font-size: 0.8rem; color: #8c8478;">
+    <a href="/" style="color: #a87c28; text-decoration: none;">Home</a>
+    <span style="margin: 0 0.5rem;">›</span>
+    <span>Mutually Beneficial Arrangements</span>
+  </nav>
+
+  <!-- Hero -->
+  <section style="padding: 3.5rem 1.5rem 2.5rem; text-align: center; background: radial-gradient(ellipse at top, rgba(196,154,48,0.1) 0%, transparent 70%);">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <div style="display: inline-block; padding: 0.35rem 1rem; background: rgba(196,154,48,0.1); border: 1px solid rgba(196,154,48,0.25); border-radius: 2rem; margin-bottom: 1.25rem;">
+        <span style="color: #a87c28; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;">Arrangement Dating Guide — {currentYear}</span>
+      </div>
+      <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.8rem, 4.5vw, 3rem); font-weight: 700; line-height: 1.2; margin-bottom: 1.25rem; color: #1a150e;">
+        Mutually Beneficial Arrangements:<br />
+        <span style="background: linear-gradient(135deg, #c49a30, #a87c28); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Complete {currentYear} Guide & Best Apps</span>
+      </h1>
+      <p style="font-size: 1rem; color: #5c5248; line-height: 1.75; max-width: 640px; margin: 0 auto 1.5rem;">
+        Mutually beneficial arrangements (MBAs) are the foundation of sugar daddy dating — relationships where both parties openly define and agree on what they want from the connection. Here's everything you need to know and the best apps for finding them in {currentYear}.
+      </p>
+    </div>
+  </section>
+
+  <!-- What is MBA explainer -->
+  <section style="padding: 0 1.5rem 2rem;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <div style="background: #f2ede5; border: 1px solid #ddd6c8; border-radius: 1rem; padding: 2rem; margin-bottom: 2rem;">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: #1a150e; margin-bottom: 1rem;">What Is a Mutually Beneficial Arrangement?</h2>
+        <div style="color: #5c5248; font-size: 0.95rem; line-height: 1.8; display: flex; flex-direction: column; gap: 0.85rem;">
+          <p>A <strong style="color: #1a150e;">mutually beneficial arrangement (MBA)</strong> is a relationship where both parties openly agree on terms that serve each person's interests. In sugar daddy dating, this typically means a wealthy, established partner (the sugar daddy) provides financial support, mentorship, gifts, or experiences in exchange for companionship, connection, and time with an attractive, ambitious partner (the sugar baby).</p>
+          <p>The key distinction from traditional dating: both parties are honest about their expectations from the very start. There's no guessing, no months of ambiguity, and no hidden agendas. Everything is discussed and agreed upon before the arrangement begins.</p>
+          <p>MBAs take many forms — from weekly dinner dates with a PPM allowance, to monthly financial support for a longer-term relationship, to travel companionship and mentorship arrangements. The best sugar daddy apps facilitate this by giving members tools to define and share their arrangement preferences upfront.</p>
+        </div>
+        <div style="margin-top: 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
+          {[
+            { icon: '💰', label: 'Financial Support', desc: 'Monthly allowance or PPM compensation' },
+            { icon: '✈️', label: 'Travel Companion', desc: 'Joint travel and luxury experiences' },
+            { icon: '🎓', label: 'Mentorship', desc: 'Career guidance, introductions, and advice' },
+            { icon: '🎁', label: 'Gifts & Lifestyle', desc: 'Gifts, dining, events, and experiences' },
+          ].map((t) => (
+            <div style="background: #fff; border: 1px solid #ddd6c8; border-radius: 0.75rem; padding: 1rem; text-align: center;">
+              <div style="font-size: 1.5rem; margin-bottom: 0.4rem;">{t.icon}</div>
+              <div style="color: #1a150e; font-weight: 700; font-size: 0.85rem; margin-bottom: 0.25rem;">{t.label}</div>
+              <div style="color: #8c8478; font-size: 0.78rem;">{t.desc}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- #1 Hanker -->
+  <section style="padding: 0 1.5rem 2rem;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: #1a150e; margin-bottom: 1rem;">Best App for Mutually Beneficial Arrangements</h2>
+      <div style="border-radius: 1rem; overflow: hidden; border: 2px solid #c49a30; background: linear-gradient(135deg, #fffef8 0%, #faf5e8 100%); box-shadow: 0 0 60px rgba(196,154,48,0.1); position: relative;">
+        <div style="position: absolute; top: 1.25rem; right: 1.25rem;">
+          <div style="padding: 0.35rem 0.85rem; background: linear-gradient(135deg, #c49a30, #a87c28); border-radius: 2rem; font-size: 0.78rem; font-weight: 700; color: #fff; text-transform: uppercase;">
+            👑 #1 for MBA Dating
+          </div>
+        </div>
+        <div style="padding: 2.5rem 2rem;">
+          <div style="display: flex; align-items: flex-start; gap: 1.5rem; flex-wrap: wrap;">
+            <a href="/hanker">
+              <div style="width: 90px; height: 90px; border-radius: 1rem; overflow: hidden; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd6c8;">
+                <img src={hanker.logo} alt="Hanker mutually beneficial arrangement app" style="width: 100%; height: 100%; object-fit: contain; padding: 6px;" onerror="this.style.opacity='0'" />
+              </div>
+            </a>
+            <div style="flex: 1; min-width: 220px;">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.4rem; flex-wrap: wrap;">
+                <span style="background: rgba(196,154,48,0.12); border: 1px solid rgba(196,154,48,0.3); border-radius: 0.35rem; padding: 0.2rem 0.6rem; font-size: 0.75rem; font-weight: 700; color: #a87c28;">RANK #1</span>
+                <a href="/hanker" style="text-decoration: none;">
+                  <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #1a150e; margin: 0;">Hanker</h3>
+                </a>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                <span style="color: #c49a30; font-size: 1.1rem; letter-spacing: 2px;">★★★★★</span>
+                <span style="color: #5c5248; font-size: 0.85rem;">5.0 / 5</span>
+              </div>
+              <p style="color: #5c5248; font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.25rem;">
+                Hanker is the best platform for mutually beneficial arrangements in {currentYear}. It explicitly supports all arrangement types — PPM, monthly allowances, and long-term MBAs — and members can openly discuss their arrangement preferences without fear of being banned. Unlike Seeking, which now penalizes MBA terminology, Hanker was built for exactly this type of honest, transparent dating.
+              </p>
+              <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                <a href="https://hanker.app" target="_blank" rel="noopener noreferrer" class="btn-gold">Find Your Arrangement on Hanker →</a>
+                <a href="/hanker" class="btn-outline">Read Review</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- All Apps -->
+  <section style="padding: 0.5rem 1.5rem 2.5rem;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #1a150e; margin-bottom: 0.5rem;">All Arrangement Dating Apps Ranked</h2>
+      <p style="color: #5c5248; font-size: 0.9rem; margin-bottom: 1.75rem;">Every major app that supports mutually beneficial arrangements — click any for the full review.</p>
+      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        {apps.slice(1).map((app) => (
+          <a href={`/${app.slug}`} style="text-decoration: none;" aria-label={`${app.name} mutually beneficial arrangement review`}>
+            <div class="card" style="padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: 1.25rem; cursor: pointer;" onmouseover="this.style.borderColor='#c49a30'" onmouseout="this.style.borderColor='#ddd6c8'">
+              <div style="width: 2.25rem; height: 2.25rem; border-radius: 50%; background: #e8e2d8; border: 1px solid #ddd6c8; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; color: #5c5248; flex-shrink: 0;">{app.rank}</div>
+              <div style="width: 48px; height: 48px; border-radius: 0.5rem; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid #ddd6c8;">
+                <img src={app.logo} alt={app.name} style="width: 100%; height: 100%; object-fit: contain; padding: 4px;" onerror="this.style.opacity='0'" />
+              </div>
+              <div style="flex: 1; min-width: 0;">
+                <div style="font-weight: 700; color: #1a150e; font-size: 1rem; margin-bottom: 0.2rem;">{app.name}{app.trademark || ''}</div>
+                <p style="color: #5c5248; font-size: 0.83rem; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{app.tagline}</p>
+              </div>
+              <div style="text-align: right; flex-shrink: 0;">
+                <div style="color: #c49a30; font-size: 0.9rem;" set:html={'&#9733;'.repeat(Math.floor(app.rating)) + '&#9734;'.repeat(5 - Math.floor(app.rating))}></div>
+                <div style="color: #8c8478; font-size: 0.75rem;">{app.rating.toFixed(1)}</div>
+              </div>
+              <div style="color: #a87c28; font-size: 1rem; flex-shrink: 0; opacity: 0.7;">→</div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <hr style="max-width: 900px; margin: 0 auto; border: none; border-top: 1px solid #ddd6c8;" />
+
+  <!-- SEO Content -->
+  <section style="padding: 3rem 1.5rem; max-width: 900px; margin: 0 auto;">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #1a150e; margin-bottom: 1.25rem;">Types of Mutually Beneficial Arrangements</h2>
+    <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2.5rem;">
+      {[
+        { title: 'PPM (Pay Per Meet)', desc: 'The most flexible MBA type. The sugar daddy pays an agreed amount after each date, with no monthly commitment required. Ideal for those new to arrangement dating or with variable schedules. Typical PPM rates: $100–$500+ per meet.' },
+        { title: 'Monthly Allowance', desc: 'A fixed amount paid monthly regardless of how many times the couple meets. Offers more stability for sugar babies and works best in established, ongoing arrangements. Common in longer-term mutually beneficial relationships.' },
+        { title: 'Splenda Arrangement', desc: 'A lower-key MBA where the sugar daddy provides more modest financial support — restaurant dates, gifts, and occasional help rather than a formal allowance. Common among younger sugar daddies or those testing arrangement dating.' },
+        { title: 'Travel Companion', desc: 'The sugar daddy covers all travel expenses (flights, hotels, dining, activities) and the sugar baby accompanies them on trips. No fixed cash allowance, but the value of travel and experiences can be substantial.' },
+        { title: 'Mentorship MBA', desc: 'The sugar daddy provides career guidance, professional introductions, and mentorship instead of (or alongside) financial support. Popular among sugar babies seeking professional growth alongside personal connection.' },
+      ].map((t) => (
+        <div style="background: #f2ede5; border: 1px solid #ddd6c8; border-radius: 0.75rem; padding: 1.25rem;">
+          <h3 style="color: #1a150e; font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem;">{t.title}</h3>
+          <p style="color: #5c5248; font-size: 0.875rem; line-height: 1.7; margin: 0;">{t.desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #1a150e; margin-bottom: 1rem;">Mutually Beneficial Arrangement FAQs</h2>
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      {[
+        { q: 'What is a mutually beneficial arrangement in dating?', a: 'A mutually beneficial arrangement (MBA) is a relationship where both parties openly agree on terms that serve each person\'s interests. In sugar daddy dating, the sugar daddy typically provides financial support, gifts, or experiences, while the sugar baby provides companionship, connection, and time. The key differentiator: complete transparency about expectations from day one.' },
+        { q: 'How do I find a mutually beneficial arrangement?', a: 'The best way is through a dedicated sugar daddy dating app. Hanker is the top choice — it explicitly supports all MBA types (PPM, monthly allowance, long-term) and allows open discussion of arrangement terms without banning users. SugarDaddyMeet and Sugarbook are also strong options with verified member communities.' },
+        { q: 'Are mutually beneficial arrangements legal?', a: 'Yes. Mutually beneficial arrangements between consenting adults are legal. They\'re transparent adult relationships where both parties agree to terms upfront — fundamentally different from solicitation or escort services. The best MBA platforms, like Hanker, are designed with legal compliance and user safety as core priorities.' },
+        { q: 'What should I discuss before starting an arrangement?', a: 'Before starting any MBA: agree on the arrangement type (PPM, monthly, etc.) and specific rates or compensation; agree on how often you\'ll meet and how contact will work; establish boundaries and what the arrangement does and doesn\'t include; and agree on how the arrangement can be ended by either party.' },
+        { q: 'What is the difference between sugar dating and a mutually beneficial arrangement?', a: 'Sugar dating is the broader category of dating platforms and culture. A mutually beneficial arrangement (MBA) is the specific relationship structure within sugar dating — the explicit agreement between two people about what they each bring to and get from the relationship. All sugar dating arrangements are MBAs by nature.' },
+      ].map((faq) => (
+        <div style="background: #f2ede5; border: 1px solid #ddd6c8; border-radius: 0.75rem; padding: 1.25rem;">
+          <h3 style="color: #1a150e; font-size: 0.95rem; font-weight: 600; margin-bottom: 0.6rem;">{faq.q}</h3>
+          <p style="color: #5c5248; font-size: 0.875rem; line-height: 1.7; margin: 0;">{faq.a}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="padding: 3rem 1.5rem; background: radial-gradient(ellipse at center, rgba(196,154,48,0.12) 0%, transparent 70%);">
+    <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+      <div style="font-size: 2rem; margin-bottom: 1rem;">👑</div>
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #1a150e; margin-bottom: 0.75rem;">Find Your Mutually Beneficial Arrangement</h2>
+      <p style="color: #5c5248; font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.75rem;">Hanker is the #1 app for finding genuine mutually beneficial arrangements in {currentYear}. Privacy-first, arrangement-friendly, and free for founding members.</p>
+      <a href="https://hanker.app" target="_blank" rel="noopener noreferrer" class="btn-gold" style="font-size: 1rem; padding: 1rem 2.5rem;">Start Your Arrangement on Hanker →</a>
+    </div>
+  </section>
+</Layout>

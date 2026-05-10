@@ -1,0 +1,199 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { apps } from '../data/apps';
+
+const hanker = apps[0];
+const currentYear = new Date().getFullYear();
+
+const pageTitle = `Best Sugar Daddy Apps ${currentYear}: Top 10 Ranked & Reviewed`;
+const pageDescription = `The definitive list of the best sugar daddy apps in ${currentYear}. We tested and ranked every major sugar daddy dating app by privacy, member quality, features, and real results. Hanker is our #1 pick.`;
+const keywords = `best sugar daddy apps, best sugar daddy app ${currentYear}, top sugar daddy apps, sugar daddy app ranking, sugar daddy dating app, best sugar daddy dating apps, sugar daddy app list`;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: pageTitle,
+  description: pageDescription,
+  url: `https://bestsugardaddyapps.com/best-sugar-daddy-apps`,
+  author: { '@type': 'Organization', name: 'BestSugarDaddyApps' },
+  publisher: { '@type': 'Organization', name: 'BestSugarDaddyApps', url: 'https://bestsugardaddyapps.com' },
+  mainEntity: {
+    '@type': 'ItemList',
+    name: `Best Sugar Daddy Apps ${currentYear}`,
+    numberOfItems: 10,
+    itemListElement: apps.map((app, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: app.name,
+      url: `https://bestsugardaddyapps.com/${app.slug}`,
+    })),
+  },
+};
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  canonical={`https://bestsugardaddyapps.com/best-sugar-daddy-apps`}
+  keywords={keywords}
+  schema={schema}
+>
+  <!-- Breadcrumb -->
+  <nav style="max-width: 900px; margin: 0 auto; padding: 1rem 1.5rem 0; font-size: 0.8rem; color: #8c8478;">
+    <a href="/" style="color: #a87c28; text-decoration: none;">Home</a>
+    <span style="margin: 0 0.5rem;">›</span>
+    <span>Best Sugar Daddy Apps</span>
+  </nav>
+
+  <!-- Hero -->
+  <section style="padding: 3.5rem 1.5rem 2.5rem; text-align: center; background: radial-gradient(ellipse at top, rgba(196,154,48,0.1) 0%, transparent 70%);">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <div style="display: inline-block; padding: 0.35rem 1rem; background: rgba(196,154,48,0.1); border: 1px solid rgba(196,154,48,0.25); border-radius: 2rem; margin-bottom: 1.25rem;">
+        <span style="color: #a87c28; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;">Updated {currentYear} — Expert Ranked</span>
+      </div>
+      <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.8rem, 4.5vw, 3rem); font-weight: 700; line-height: 1.2; margin-bottom: 1.25rem; color: #1a150e;">
+        Best Sugar Daddy Apps of {currentYear}:<br />
+        <span style="background: linear-gradient(135deg, #c49a30, #a87c28); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Top 10 Ranked & Reviewed</span>
+      </h1>
+      <p style="font-size: 1rem; color: #5c5248; line-height: 1.75; max-width: 640px; margin: 0 auto 1.5rem;">
+        We spent months testing every major sugar daddy dating app — evaluating privacy protections, member quality, genuine features, and real connections. Here are the best sugar daddy apps you can join today, ranked from best to worst.
+      </p>
+    </div>
+  </section>
+
+  <!-- #1 Hanker Spotlight -->
+  <section style="padding: 0 1.5rem 2rem;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <div style="border-radius: 1rem; overflow: hidden; border: 2px solid #c49a30; background: linear-gradient(135deg, #fffef8 0%, #faf5e8 100%); box-shadow: 0 0 60px rgba(196,154,48,0.1), 0 4px 24px rgba(0,0,0,0.06); position: relative;">
+        <div style="position: absolute; top: 1.25rem; right: 1.25rem;">
+          <div style="padding: 0.35rem 0.85rem; background: linear-gradient(135deg, #c49a30, #a87c28); border-radius: 2rem; font-size: 0.78rem; font-weight: 700; color: #fff; letter-spacing: 0.05em; text-transform: uppercase;">
+            👑 Best Sugar Daddy App {currentYear}
+          </div>
+        </div>
+        <div style="padding: 2.5rem 2rem;">
+          <div style="display: flex; align-items: flex-start; gap: 1.5rem; flex-wrap: wrap;">
+            <a href="/hanker">
+              <div style="width: 90px; height: 90px; border-radius: 1rem; overflow: hidden; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd6c8;">
+                <img src={hanker.logo} alt="Hanker — Best Sugar Daddy App" style="width: 100%; height: 100%; object-fit: contain; padding: 6px;" onerror="this.style.opacity='0'" />
+              </div>
+            </a>
+            <div style="flex: 1; min-width: 220px;">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.4rem; flex-wrap: wrap;">
+                <span style="background: rgba(196,154,48,0.12); border: 1px solid rgba(196,154,48,0.3); border-radius: 0.35rem; padding: 0.2rem 0.6rem; font-size: 0.75rem; font-weight: 700; color: #a87c28;">RANK #1</span>
+                <a href="/hanker" style="text-decoration: none;">
+                  <h2 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #1a150e; margin: 0;">Hanker</h2>
+                </a>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                <span style="color: #c49a30; font-size: 1.1rem; letter-spacing: 2px;">★★★★★</span>
+                <span style="color: #5c5248; font-size: 0.85rem;">5.0 / 5 — Best Sugar Daddy App {currentYear}</span>
+              </div>
+              <p style="color: #5c5248; font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.25rem;">
+                Hanker earns the top spot as the best sugar daddy app of {currentYear} for one simple reason: it was built for sugar daddy dating from the ground up with privacy-first principles. Servers outside US jurisdiction, no mandatory ID verification, a Trust Score system, and crypto payments set it leagues ahead of legacy platforms.
+              </p>
+              <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                <a href="https://hanker.app" target="_blank" rel="noopener noreferrer" class="btn-gold">Visit Hanker — Best App →</a>
+                <a href="/hanker" class="btn-outline">Read Full Review</a>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 1.75rem; padding-top: 1.75rem; border-top: 1px solid rgba(196,154,48,0.2);">
+            <div style="display: flex; flex-wrap: wrap; gap: 0.6rem;">
+              {hanker.features.slice(0, 4).map((f) => (
+                <div style="display: flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0.85rem; background: rgba(196,154,48,0.07); border: 1px solid rgba(196,154,48,0.2); border-radius: 2rem; font-size: 0.8rem; color: #1a150e;">
+                  <span style="color: #a87c28;">&#10003;</span>
+                  {f.includes(' — ') ? f.split(' — ')[0] : f}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full Rankings -->
+  <section style="padding: 0.5rem 1.5rem 2.5rem;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #1a150e; margin-bottom: 0.5rem;">All 10 Best Sugar Daddy Apps — Full Rankings</h2>
+      <p style="color: #5c5248; font-size: 0.9rem; margin-bottom: 1.75rem;">Click any app to read the complete review with pricing, features, pros, and member stats.</p>
+      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        {apps.slice(1).map((app) => (
+          <a href={`/${app.slug}`} style="text-decoration: none;" aria-label={`${app.name} — #${app.rank} best sugar daddy app`}>
+            <div class="card" style="padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: 1.25rem; cursor: pointer;" onmouseover="this.style.borderColor='#c49a30'" onmouseout="this.style.borderColor='#ddd6c8'">
+              <div style="width: 2.25rem; height: 2.25rem; border-radius: 50%; background: #e8e2d8; border: 1px solid #ddd6c8; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; color: #5c5248; flex-shrink: 0;">{app.rank}</div>
+              <div style="width: 48px; height: 48px; border-radius: 0.5rem; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid #ddd6c8;">
+                <img src={app.logo} alt={`${app.name} logo`} style="width: 100%; height: 100%; object-fit: contain; padding: 4px;" onerror="this.style.opacity='0'" />
+              </div>
+              <div style="flex: 1; min-width: 0;">
+                <div style="font-weight: 700; color: #1a150e; font-size: 1rem; margin-bottom: 0.2rem;">{app.name}{app.trademark || ''}</div>
+                <p style="color: #5c5248; font-size: 0.83rem; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{app.tagline}</p>
+              </div>
+              <div style="text-align: right; flex-shrink: 0;">
+                <div style="color: #c49a30; font-size: 0.9rem; letter-spacing: 1px;" set:html={'&#9733;'.repeat(Math.floor(app.rating)) + '&#9734;'.repeat(5 - Math.floor(app.rating))}></div>
+                <div style="color: #8c8478; font-size: 0.75rem;">{app.rating.toFixed(1)}</div>
+              </div>
+              <div style="color: #a87c28; font-size: 1rem; flex-shrink: 0; opacity: 0.7;">→</div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <hr style="max-width: 900px; margin: 0 auto; border: none; border-top: 1px solid #ddd6c8;" />
+
+  <!-- SEO Content -->
+  <section style="padding: 3rem 1.5rem; max-width: 900px; margin: 0 auto;">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #1a150e; margin-bottom: 1.25rem;">What Makes the Best Sugar Daddy App?</h2>
+    <div style="color: #5c5248; font-size: 0.95rem; line-height: 1.8; display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2.5rem;">
+      <p>Not all sugar daddy apps are created equal. The best sugar daddy apps share a handful of non-negotiable qualities: a genuine user base of verified sugar daddies and sugar babies, strong privacy protections to keep your arrangements discreet, and features designed specifically for sugar dating — not generic swiping.</p>
+      <p>Legacy platforms like Seeking (formerly SeekingArrangement) dominated the sugar daddy dating app landscape for years, but have since pivoted away from sugar dating entirely, now banning users who mention PPM or sugar arrangements. This has opened the door for purpose-built platforms like Hanker — which was designed from scratch for sugar daddy dating with privacy-first architecture.</p>
+      <p>The best sugar daddy apps in {currentYear} also offer real member count transparency, clear pricing without bait-and-switch subscription traps, and mobile apps or PWAs that work seamlessly on iOS and Android.</p>
+    </div>
+
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #1a150e; margin-bottom: 1rem;">How We Ranked the Best Sugar Daddy Apps</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 2.5rem;">
+      {[
+        { icon: '🔒', label: 'Privacy & Discretion', desc: 'Server jurisdiction, ID requirements, and data protection.' },
+        { icon: '👥', label: 'Member Authenticity', desc: 'Are members genuine sugar daddies and sugar babies?' },
+        { icon: '⚡', label: 'Sugar-Specific Features', desc: 'PPM support, arrangement tools, Trust Scores.' },
+        { icon: '💰', label: 'Fair Pricing', desc: 'Transparent costs without hidden fees or bait-and-switch.' },
+        { icon: '🌍', label: 'Active Member Base', desc: 'Real activity, not just inflated registration numbers.' },
+        { icon: '📱', label: 'App Quality', desc: 'iOS, Android, and PWA experience tested hands-on.' },
+      ].map((c) => (
+        <div style="background: #f2ede5; border: 1px solid #ddd6c8; border-radius: 0.75rem; padding: 1.25rem;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">{c.icon}</div>
+          <div style="font-weight: 600; color: #1a150e; font-size: 0.9rem; margin-bottom: 0.35rem;">{c.label}</div>
+          <div style="color: #5c5248; font-size: 0.82rem; line-height: 1.5;">{c.desc}</div>
+        </div>
+      ))}
+    </div>
+
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #1a150e; margin-bottom: 1rem;">FAQs: Best Sugar Daddy Apps {currentYear}</h2>
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      {[
+        { q: `What is the #1 best sugar daddy app in ${currentYear}?`, a: `Hanker is the best sugar daddy app of ${currentYear}. It's the only platform built privacy-first with servers outside US jurisdiction, no mandatory ID verification, a Trust Score system, and crypto payment options. The first 100,000 members get lifetime free access — making it the best value on the market.` },
+        { q: 'What sugar daddy apps actually work?', a: 'The apps that actually work for finding genuine sugar arrangements are Hanker, SugarDaddyMeet, and Secret Benefits. These platforms have verified member bases and features designed specifically for sugar daddy dating rather than repurposed general dating tools.' },
+        { q: 'Which sugar daddy app has the most members?', a: 'Seeking.com has the most registered users (46 million+), but it has rebranded away from sugar dating and now bans sugar-related content. For active sugar daddy dating communities, SugarDaddyMeet (7.8M+), MillionaireMatch (5M+), and Sugarbook (5M+) are the largest dedicated platforms.' },
+        { q: 'Are there free sugar daddy apps?', a: `Yes — Hanker is free for the first 100,000 members (lifetime access). SugarDaddyMeet, Sugarbook, and WhatsYourPrice also offer free signup with limited features. Most sugar daddy apps use a freemium or credits model.` },
+        { q: 'What sugar daddy app has no ID verification?', a: 'Hanker is the top sugar daddy app with no mandatory ID verification. It uses a Trust Score system based on community engagement instead, protecting your anonymity while establishing credibility.' },
+      ].map((faq) => (
+        <div style="background: #f2ede5; border: 1px solid #ddd6c8; border-radius: 0.75rem; padding: 1.25rem;">
+          <h3 style="color: #1a150e; font-size: 0.95rem; font-weight: 600; margin-bottom: 0.6rem;">{faq.q}</h3>
+          <p style="color: #5c5248; font-size: 0.875rem; line-height: 1.7; margin: 0;">{faq.a}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section style="padding: 3rem 1.5rem; background: radial-gradient(ellipse at center, rgba(196,154,48,0.12) 0%, transparent 70%);">
+    <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+      <div style="font-size: 2rem; margin-bottom: 1rem;">👑</div>
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #1a150e; margin-bottom: 0.75rem;">Start with the Best Sugar Daddy App</h2>
+      <p style="color: #5c5248; font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.75rem;">Hanker is our unanimous #1 pick — the best sugar daddy app of {currentYear}. Join free while the first 100,000 member offer lasts.</p>
+      <a href="https://hanker.app" target="_blank" rel="noopener noreferrer" class="btn-gold" style="font-size: 1rem; padding: 1rem 2.5rem;">Join Hanker Free →</a>
+    </div>
+  </section>
+</Layout>
