@@ -62,18 +62,18 @@ function renderStars(rating: number): string {
   schema={schema}
 >
   <!-- Breadcrumb -->
-  <nav style="background: #08080f; border-bottom: 1px solid #22223a; padding: 0.75rem 1.5rem;">
+  <nav style="background: #faf9f6; border-bottom: 1px solid #ddd6c8; padding: 0.75rem 1.5rem;">
     <div style="max-width: 900px; margin: 0 auto;">
       <ol style="list-style: none; padding: 0; margin: 0; display: flex; align-items: center; gap: 0.5rem; font-size: 0.82rem;" itemscope itemtype="https://schema.org/BreadcrumbList">
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/" itemprop="item" style="color: #c8c0b0; text-decoration: none;" onmouseover="this.style.color='#d4a843'" onmouseout="this.style.color='#c8c0b0'">
+          <a href="/" itemprop="item" style="color: #5c5248; text-decoration: none;" onmouseover="this.style.color='#a87c28'" onmouseout="this.style.color='#5c5248'">
             <span itemprop="name">Sugar Daddy Apps</span>
           </a>
           <meta itemprop="position" content="1" />
         </li>
-        <li style="color: #6b6680;">›</li>
+        <li style="color: #8c8478;">›</li>
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <span itemprop="name" style="color: #d4a843;">{app.name}</span>
+          <span itemprop="name" style="color: #a87c28;">{app.name}</span>
           <meta itemprop="position" content="2" />
         </li>
       </ol>
@@ -81,11 +81,11 @@ function renderStars(rating: number): string {
   </nav>
 
   <!-- App Hero -->
-  <section style="padding: 3rem 1.5rem 2rem; background: radial-gradient(ellipse at top, rgba(212,168,67,0.04) 0%, transparent 60%);">
+  <section style="padding: 3rem 1.5rem 2rem; background: radial-gradient(ellipse at top, rgba(196,154,48,0.08) 0%, transparent 60%);">
     <div style="max-width: 900px; margin: 0 auto;">
       <div style="display: flex; align-items: flex-start; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
         <!-- Logo -->
-        <div style="width: 100px; height: 100px; border-radius: 1.25rem; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 2px solid #22223a;">
+        <div style="width: 100px; height: 100px; border-radius: 1.25rem; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 2px solid #ddd6c8;">
           <img
             src={app.logo}
             alt={`${app.name} — Sugar Daddy Dating App`}
@@ -97,25 +97,25 @@ function renderStars(rating: number): string {
         <!-- App Info -->
         <div style="flex: 1; min-width: 240px;">
           <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; flex-wrap: wrap;">
-            <span style="background: rgba(212,168,67,0.12); border: 1px solid rgba(212,168,67,0.25); border-radius: 0.35rem; padding: 0.25rem 0.65rem; font-size: 0.75rem; font-weight: 700; color: #d4a843;">{isHanker ? '👑 RANK #1' : `RANK #${app.rank}`}</span>
-            {isHanker && <span style="background: rgba(212,168,67,0.08); border: 1px solid rgba(212,168,67,0.2); border-radius: 0.35rem; padding: 0.25rem 0.65rem; font-size: 0.75rem; font-weight: 600; color: #d4a843;">EDITOR'S CHOICE</span>}
+            <span style="background: rgba(196,154,48,0.12); border: 1px solid rgba(196,154,48,0.25); border-radius: 0.35rem; padding: 0.25rem 0.65rem; font-size: 0.75rem; font-weight: 700; color: #a87c28;">{isHanker ? '👑 RANK #1' : `RANK #${app.rank}`}</span>
+            {isHanker && <span style="background: rgba(196,154,48,0.08); border: 1px solid rgba(196,154,48,0.2); border-radius: 0.35rem; padding: 0.25rem 0.65rem; font-size: 0.75rem; font-weight: 600; color: #a87c28;">EDITOR'S CHOICE</span>}
           </div>
-          <h1 style="font-family: 'Playfair Display', serif; font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700; color: #f5f0e8; margin-bottom: 0.4rem; line-height: 1.2;">
+          <h1 style="font-family: 'Playfair Display', serif; font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700; color: #1a150e; margin-bottom: 0.4rem; line-height: 1.2;">
             {app.name}{app.trademark || ""}
           </h1>
-          <p style="color: #c8c0b0; font-size: 0.95rem; font-style: italic; margin-bottom: 0.75rem;">{app.tagline}</p>
+          <p style="color: #5c5248; font-size: 0.95rem; font-style: italic; margin-bottom: 0.75rem;">{app.tagline}</p>
 
           <!-- Rating -->
           <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; flex-wrap: wrap;">
             <div style="display: flex; align-items: center; gap: 0.35rem;">
-              <span style="color: #d4a843; font-size: 1.15rem; letter-spacing: 2px;">{renderStars(app.rating)}</span>
-              <span style="color: #f5f0e8; font-weight: 700; font-size: 1rem; font-family: sans-serif;">{app.rating.toFixed(1)}</span>
-              <span style="color: #6b6680; font-size: 0.85rem;">/ 5.0</span>
+              <span style="color: #c49a30; font-size: 1.15rem; letter-spacing: 2px;">{renderStars(app.rating)}</span>
+              <span style="color: #1a150e; font-weight: 700; font-size: 1rem; font-family: sans-serif;">{app.rating.toFixed(1)}</span>
+              <span style="color: #8c8478; font-size: 0.85rem;">/ 5.0</span>
             </div>
-            <span style="color: #22223a;">|</span>
-            <span style="color: #c8c0b0; font-size: 0.85rem;">Founded {app.founded}</span>
-            <span style="color: #22223a;">|</span>
-            <span style="color: #c8c0b0; font-size: 0.85rem;">{app.memberCount}</span>
+            <span style="color: #ddd6c8;">|</span>
+            <span style="color: #5c5248; font-size: 0.85rem;">Founded {app.founded}</span>
+            <span style="color: #ddd6c8;">|</span>
+            <span style="color: #5c5248; font-size: 0.85rem;">{app.memberCount}</span>
           </div>
 
           <!-- CTAs -->
@@ -129,8 +129,8 @@ function renderStars(rating: number): string {
       </div>
 
       <!-- Short Description -->
-      <div style="background: #111120; border: 1px solid #22223a; border-radius: 0.75rem; padding: 1.25rem; border-left: 3px solid #d4a843;">
-        <p style="color: #f5f0e8; font-size: 0.95rem; line-height: 1.7; margin: 0;">{app.shortDescription}</p>
+      <div style="background: #f2ede5; border: 1px solid #ddd6c8; border-radius: 0.75rem; padding: 1.25rem; border-left: 3px solid #c49a30;">
+        <p style="color: #1a150e; font-size: 0.95rem; line-height: 1.7; margin: 0;">{app.shortDescription}</p>
       </div>
     </div>
   </section>
@@ -141,12 +141,12 @@ function renderStars(rating: number): string {
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem;">
 
         <!-- Features -->
-        <div style="background: #111120; border: 1px solid #22223a; border-radius: 0.75rem; padding: 1.5rem;">
-          <h2 style="font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: #f5f0e8; margin-bottom: 1rem;">Key Features</h2>
+        <div style="background: #f2ede5; border: 1px solid #ddd6c8; border-radius: 0.75rem; padding: 1.5rem;">
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: #1a150e; margin-bottom: 1rem;">Key Features</h2>
           <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.65rem;">
             {app.features.map((f) => (
-              <li style="display: flex; align-items: flex-start; gap: 0.6rem; color: #c8c0b0; font-size: 0.875rem; line-height: 1.5;">
-                <span style="color: #d4a843; flex-shrink: 0; margin-top: 0.1rem;">✓</span>
+              <li style="display: flex; align-items: flex-start; gap: 0.6rem; color: #5c5248; font-size: 0.875rem; line-height: 1.5;">
+                <span style="color: #a87c28; flex-shrink: 0; margin-top: 0.1rem;">✓</span>
                 {f}
               </li>
             ))}
@@ -155,36 +155,36 @@ function renderStars(rating: number): string {
 
         <!-- Pricing + Stats -->
         <div style="display: flex; flex-direction: column; gap: 1.25rem;">
-          <div style="background: #111120; border: 1px solid #22223a; border-radius: 0.75rem; padding: 1.5rem;">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: #f5f0e8; margin-bottom: 1rem;">Pricing</h2>
+          <div style="background: #f2ede5; border: 1px solid #ddd6c8; border-radius: 0.75rem; padding: 1.5rem;">
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: #1a150e; margin-bottom: 1rem;">Pricing</h2>
             <div style="display: flex; flex-direction: column; gap: 0.6rem;">
               {app.pricing.free && (
                 <div style="display: flex; align-items: center; gap: 0.5rem;">
-                  <span style="color: #22c55e; font-size: 0.85rem;">✓</span>
-                  <span style="color: #c8c0b0; font-size: 0.875rem;">Free to join</span>
+                  <span style="color: #16a34a; font-size: 0.85rem;">✓</span>
+                  <span style="color: #5c5248; font-size: 0.875rem;">Free to join</span>
                 </div>
               )}
               {app.pricing.startingPrice && (
                 <div style="display: flex; align-items: center; gap: 0.5rem;">
-                  <span style="color: #d4a843; font-size: 0.85rem;">💰</span>
-                  <span style="color: #c8c0b0; font-size: 0.875rem;">Starting from <strong style="color: #f5f0e8;">{app.pricing.startingPrice}</strong></span>
+                  <span style="color: #c49a30; font-size: 0.85rem;">💰</span>
+                  <span style="color: #5c5248; font-size: 0.875rem;">Starting from <strong style="color: #1a150e;">{app.pricing.startingPrice}</strong></span>
                 </div>
               )}
               <div style="display: flex; align-items: center; gap: 0.5rem;">
-                <span style="color: #d4a843; font-size: 0.85rem;">📋</span>
-                <span style="color: #c8c0b0; font-size: 0.875rem; text-transform: capitalize;">{app.pricing.model} model</span>
+                <span style="color: #c49a30; font-size: 0.85rem;">📋</span>
+                <span style="color: #5c5248; font-size: 0.875rem; text-transform: capitalize;">{app.pricing.model} model</span>
               </div>
             </div>
-            <p style="color: #6b6680; font-size: 0.8rem; line-height: 1.6; margin-top: 0.75rem; margin-bottom: 0;">{app.pricing.notes}</p>
+            <p style="color: #8c8478; font-size: 0.8rem; line-height: 1.6; margin-top: 0.75rem; margin-bottom: 0;">{app.pricing.notes}</p>
           </div>
 
-          <div style="background: #111120; border: 1px solid #22223a; border-radius: 0.75rem; padding: 1.5rem;">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: #f5f0e8; margin-bottom: 1rem;">Quick Stats</h2>
+          <div style="background: #f2ede5; border: 1px solid #ddd6c8; border-radius: 0.75rem; padding: 1.5rem;">
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: #1a150e; margin-bottom: 1rem;">Quick Stats</h2>
             <div style="display: flex; flex-direction: column; gap: 0.6rem;">
               {Object.entries(app.stats).map(([key, value]) => (
-                <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.5rem; border-bottom: 1px solid #22223a;">
-                  <span style="color: #6b6680; font-size: 0.82rem;">{key}</span>
-                  <span style="color: #f5f0e8; font-size: 0.82rem; font-weight: 600; text-align: right; max-width: 60%;">{value}</span>
+                <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.5rem; border-bottom: 1px solid #ddd6c8;">
+                  <span style="color: #8c8478; font-size: 0.82rem;">{key}</span>
+                  <span style="color: #1a150e; font-size: 0.82rem; font-weight: 600; text-align: right; max-width: 60%;">{value}</span>
                 </div>
               ))}
             </div>
@@ -197,12 +197,12 @@ function renderStars(rating: number): string {
   <!-- Full Review -->
   <section style="padding: 2rem 1.5rem;">
     <div style="max-width: 900px; margin: 0 auto;">
-      <div style="background: #111120; border: 1px solid #22223a; border-radius: 0.75rem; padding: 2rem;">
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: #f5f0e8; margin-bottom: 1.25rem;">
+      <div style="background: #f2ede5; border: 1px solid #ddd6c8; border-radius: 0.75rem; padding: 2rem;">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: #1a150e; margin-bottom: 1.25rem;">
           {app.name} Review — Full Analysis
         </h2>
         {app.fullDescription.split('\n\n').map((para) => (
-          <p style="color: #c8c0b0; font-size: 0.93rem; line-height: 1.8; margin-bottom: 1rem;">{para}</p>
+          <p style="color: #5c5248; font-size: 0.93rem; line-height: 1.8; margin-bottom: 1rem;">{para}</p>
         ))}
       </div>
     </div>
@@ -211,19 +211,19 @@ function renderStars(rating: number): string {
   <!-- Pros -->
   <section style="padding: 1rem 1.5rem 2rem;">
     <div style="max-width: 900px; margin: 0 auto;">
-      <div style="background: #111120; border: 1px solid #22223a; border-radius: 0.75rem; padding: 1.5rem;">
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: #f5f0e8; margin-bottom: 1rem;">
+      <div style="background: #f2ede5; border: 1px solid #ddd6c8; border-radius: 0.75rem; padding: 1.5rem;">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: #1a150e; margin-bottom: 1rem;">
           Why We Recommend {app.name}
         </h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem;">
           {app.pros.map((pro) => (
-            <div style="display: flex; align-items: flex-start; gap: 0.6rem; padding: 0.75rem; background: rgba(34,34,58,0.5); border-radius: 0.5rem;">
-              <span style="color: #22c55e; font-size: 0.9rem; flex-shrink: 0; margin-top: 0.05rem;">✓</span>
-              <span style="color: #c8c0b0; font-size: 0.85rem; line-height: 1.5;">{pro}</span>
+            <div style="display: flex; align-items: flex-start; gap: 0.6rem; padding: 0.75rem; background: rgba(196,154,48,0.06); border-radius: 0.5rem; border: 1px solid rgba(196,154,48,0.15);">
+              <span style="color: #16a34a; font-size: 0.9rem; flex-shrink: 0; margin-top: 0.05rem;">✓</span>
+              <span style="color: #5c5248; font-size: 0.85rem; line-height: 1.5;">{pro}</span>
             </div>
           ))}
         </div>
-        <div style="margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid #22223a;">
+        <div style="margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid #ddd6c8;">
           <a href={app.siteUrl} target="_blank" rel="noopener noreferrer" class="btn-gold">
             Visit {app.name} — Official Site →
           </a>
@@ -236,9 +236,9 @@ function renderStars(rating: number): string {
   {!isHanker && (
     <section style="padding: 2rem 1.5rem 3rem;">
       <div style="max-width: 900px; margin: 0 auto;">
-        <div style="border-radius: 1rem; border: 2px solid #d4a843; background: linear-gradient(135deg, #111120 0%, #1a1a2e 100%); padding: 2rem; box-shadow: 0 0 40px rgba(212,168,67,0.08);">
+        <div style="border-radius: 1rem; border: 2px solid #c49a30; background: linear-gradient(135deg, #fffef8 0%, #faf5e8 100%); padding: 2rem; box-shadow: 0 4px 24px rgba(0,0,0,0.06);">
           <div style="display: flex; align-items: flex-start; gap: 1.25rem; flex-wrap: wrap;">
-            <div style="width: 70px; height: 70px; border-radius: 0.875rem; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+            <div style="width: 70px; height: 70px; border-radius: 0.875rem; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid #ddd6c8;">
               <img
                 src={hanker.logo}
                 alt="Hanker — #1 Sugar Daddy App"
@@ -247,22 +247,22 @@ function renderStars(rating: number): string {
               />
             </div>
             <div style="flex: 1; min-width: 240px;">
-              <div style="display: inline-block; padding: 0.25rem 0.75rem; background: linear-gradient(135deg, rgba(212,168,67,0.15), rgba(212,168,67,0.05)); border: 1px solid rgba(212,168,67,0.3); border-radius: 2rem; margin-bottom: 0.6rem;">
-                <span style="color: #d4a843; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em;">👑 OUR #1 PICK — BEST SUGAR DADDY APP</span>
+              <div style="display: inline-block; padding: 0.25rem 0.75rem; background: rgba(196,154,48,0.1); border: 1px solid rgba(196,154,48,0.3); border-radius: 2rem; margin-bottom: 0.6rem;">
+                <span style="color: #a87c28; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em;">👑 OUR #1 PICK — BEST SUGAR DADDY APP</span>
               </div>
-              <h3 style="font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: #f5f0e8; margin-bottom: 0.5rem;">
+              <h3 style="font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: #1a150e; margin-bottom: 0.5rem;">
                 Why We Rank Hanker #1
               </h3>
-              <p style="color: #c8c0b0; font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.25rem;">
+              <p style="color: #5c5248; font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.25rem;">
                 While {app.name} is a solid sugar daddy platform, Hanker leads our rankings for a reason: it's the only sugar daddy dating app built privacy-first, with servers outside US jurisdiction, a Trust Score system that rewards genuine users, and anonymous crypto payment options. The first 100,000 members get lifetime free access — making it the smartest choice for sugar daddy dating in 2026.
               </p>
               <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
-                <span style="color: #d4a843; font-size: 1rem; letter-spacing: 2px;">★★★★★</span>
-                <span style="color: #c8c0b0; font-size: 0.85rem;">Rated 5.0 / 5 — Editor's Choice</span>
+                <span style="color: #c49a30; font-size: 1rem; letter-spacing: 2px;">★★★★★</span>
+                <span style="color: #5c5248; font-size: 0.85rem;">Rated 5.0 / 5 — Editor's Choice</span>
               </div>
               <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem;">
                 {['Privacy-First', 'No ID Required', 'Crypto Payments', 'Free for Early Members', 'PPM Supported'].map((tag) => (
-                  <span style="padding: 0.3rem 0.75rem; background: rgba(212,168,67,0.06); border: 1px solid rgba(212,168,67,0.15); border-radius: 2rem; font-size: 0.78rem; color: #d4a843;">{tag}</span>
+                  <span style="padding: 0.3rem 0.75rem; background: rgba(196,154,48,0.08); border: 1px solid rgba(196,154,48,0.2); border-radius: 2rem; font-size: 0.78rem; color: #a87c28;">{tag}</span>
                 ))}
               </div>
               <a href="https://hanker.app" target="_blank" rel="noopener noreferrer" class="btn-gold">
@@ -278,31 +278,31 @@ function renderStars(rating: number): string {
   <!-- Prev / Next Navigation -->
   <section style="padding: 1.5rem 1.5rem 3rem;">
     <div style="max-width: 900px; margin: 0 auto;">
-      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #f5f0e8; margin-bottom: 1rem;">More Sugar Daddy App Reviews</h3>
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #1a150e; margin-bottom: 1rem;">More Sugar Daddy App Reviews</h3>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
         {prevApp && (
           <a href={`/${prevApp.slug}`} style="text-decoration: none;">
-            <div class="card" style="padding: 1rem;" onmouseover="this.style.borderColor='#d4a843'" onmouseout="this.style.borderColor='#22223a'">
-              <div style="color: #6b6680; font-size: 0.75rem; margin-bottom: 0.4rem;">← Previous</div>
-              <div style="color: #f5f0e8; font-weight: 600; font-size: 0.9rem;">#{prevApp.rank} {prevApp.name}</div>
-              <div style="color: #c8c0b0; font-size: 0.8rem; margin-top: 0.2rem;">{prevApp.tagline.split(' — ')[0]}</div>
+            <div class="card" style="padding: 1rem;" onmouseover="this.style.borderColor='#c49a30'" onmouseout="this.style.borderColor='#ddd6c8'">
+              <div style="color: #8c8478; font-size: 0.75rem; margin-bottom: 0.4rem;">← Previous</div>
+              <div style="color: #1a150e; font-weight: 600; font-size: 0.9rem;">#{prevApp.rank} {prevApp.name}</div>
+              <div style="color: #5c5248; font-size: 0.8rem; margin-top: 0.2rem;">{prevApp.tagline.split(' — ')[0]}</div>
             </div>
           </a>
         )}
         {nextApp && (
           <a href={`/${nextApp.slug}`} style="text-decoration: none;">
-            <div class="card" style="padding: 1rem;" onmouseover="this.style.borderColor='#d4a843'" onmouseout="this.style.borderColor='#22223a'">
-              <div style="color: #6b6680; font-size: 0.75rem; margin-bottom: 0.4rem;">Next →</div>
-              <div style="color: #f5f0e8; font-weight: 600; font-size: 0.9rem;">#{nextApp.rank} {nextApp.name}</div>
-              <div style="color: #c8c0b0; font-size: 0.8rem; margin-top: 0.2rem;">{nextApp.tagline.split(' — ')[0]}</div>
+            <div class="card" style="padding: 1rem;" onmouseover="this.style.borderColor='#c49a30'" onmouseout="this.style.borderColor='#ddd6c8'">
+              <div style="color: #8c8478; font-size: 0.75rem; margin-bottom: 0.4rem;">Next →</div>
+              <div style="color: #1a150e; font-weight: 600; font-size: 0.9rem;">#{nextApp.rank} {nextApp.name}</div>
+              <div style="color: #5c5248; font-size: 0.8rem; margin-top: 0.2rem;">{nextApp.tagline.split(' — ')[0]}</div>
             </div>
           </a>
         )}
         <a href="/" style="text-decoration: none;">
-          <div class="card" style="padding: 1rem;" onmouseover="this.style.borderColor='#d4a843'" onmouseout="this.style.borderColor='#22223a'">
-            <div style="color: #6b6680; font-size: 0.75rem; margin-bottom: 0.4rem;">All Rankings</div>
-            <div style="color: #f5f0e8; font-weight: 600; font-size: 0.9rem;">Top 10 Sugar Daddy Apps</div>
-            <div style="color: #c8c0b0; font-size: 0.8rem; margin-top: 0.2rem;">View complete rankings →</div>
+          <div class="card" style="padding: 1rem;" onmouseover="this.style.borderColor='#c49a30'" onmouseout="this.style.borderColor='#ddd6c8'">
+            <div style="color: #8c8478; font-size: 0.75rem; margin-bottom: 0.4rem;">All Rankings</div>
+            <div style="color: #1a150e; font-weight: 600; font-size: 0.9rem;">Top 10 Sugar Daddy Apps</div>
+            <div style="color: #5c5248; font-size: 0.8rem; margin-top: 0.2rem;">View complete rankings →</div>
           </div>
         </a>
       </div>

@@ -2,14 +2,14 @@
 
 @theme {
   --color-gold-light: #f0c84a;
-  --color-gold: #d4a843;
+  --color-gold: #c49a30;
   --color-gold-dark: #a87c28;
-  --color-dark-base: #08080f;
-  --color-dark-card: #111120;
-  --color-dark-border: #22223a;
-  --color-dark-muted: #1a1a2e;
-  --color-cream: #f5f0e8;
-  --color-cream-muted: #c8c0b0;
+  --color-dark-base: #faf9f6;
+  --color-dark-card: #f2ede5;
+  --color-dark-border: #ddd6c8;
+  --color-dark-muted: #e8e2d8;
+  --color-cream: #1a150e;
+  --color-cream-muted: #5c5248;
 
   --font-family-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-family-display: 'Playfair Display', Georgia, serif;
@@ -20,6 +20,7 @@
     background-color: var(--color-dark-base);
     color: var(--color-cream);
     scroll-behavior: smooth;
+    color-scheme: light;
   }
 
   body {
@@ -29,6 +30,14 @@
 
   h1, h2, h3 {
     font-family: var(--font-family-display);
+  }
+
+  a {
+    color: #a87c28
+  }
+
+  a:hover {
+        text-decoration: underline;
   }
 }
 
@@ -62,7 +71,7 @@
     gap: 0.5rem;
     padding: 0.75rem 1.75rem;
     border: 1px solid var(--color-gold-dark);
-    color: var(--color-gold);
+    color: var(--color-gold-dark);
     font-weight: 600;
     font-size: 0.9rem;
     letter-spacing: 0.03em;
@@ -73,8 +82,8 @@
   }
 
   .btn-outline:hover {
-    background: rgba(212, 168, 67, 0.08);
-    border-color: var(--color-gold);
+    background: rgba(168, 124, 40, 0.08);
+    border-color: var(--color-gold-dark);
   }
 
   .card {
@@ -126,7 +135,7 @@
 }
 
 .hanker-glow {
-  box-shadow: 0 0 60px rgba(212, 168, 67, 0.12), 0 0 120px rgba(212, 168, 67, 0.05);
+  box-shadow: 0 0 60px rgba(196, 154, 48, 0.15), 0 4px 32px rgba(0, 0, 0, 0.06);
 }
 
 .divider-gold {

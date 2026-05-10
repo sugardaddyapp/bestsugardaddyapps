@@ -34,20 +34,20 @@ const schema = {
 
 <Layout title={pageTitle} description={pageDescription} keywords={keywords} schema={schema}>
   <!-- Hero Section -->
-  <section style="padding: 4rem 1.5rem 3rem; text-align: center; background: radial-gradient(ellipse at top, rgba(212,168,67,0.06) 0%, transparent 70%);">
+  <section style="padding: 4rem 1.5rem 3rem; text-align: center; background: radial-gradient(ellipse at top, rgba(196,154,48,0.1) 0%, transparent 70%);">
     <div style="max-width: 800px; margin: 0 auto;">
-      <div style="display: inline-block; padding: 0.35rem 1rem; background: rgba(212,168,67,0.1); border: 1px solid rgba(212,168,67,0.2); border-radius: 2rem; margin-bottom: 1.25rem;">
-        <span style="color: #d4a843; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;">Updated {currentMonth} {currentYear}</span>
+      <div style="display: inline-block; padding: 0.35rem 1rem; background: rgba(196,154,48,0.1); border: 1px solid rgba(196,154,48,0.25); border-radius: 2rem; margin-bottom: 1.25rem;">
+        <span style="color: #a87c28; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;">Updated {currentMonth} {currentYear}</span>
       </div>
-      <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; line-height: 1.15; margin-bottom: 1.25rem; color: #f5f0e8;">
-        10 Best <span style="background: linear-gradient(135deg, #f0c84a, #d4a843); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Sugar Daddy Apps</span><br />& Dating Sites of {currentYear}
+      <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; line-height: 1.15; margin-bottom: 1.25rem; color: #1a150e;">
+        10 <a href="https://hanker.app"><span style="background: linear-gradient(135deg, #c49a30, #a87c28); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Best Sugar Daddy Apps</span></a><br />& Dating Sites of {currentYear}
       </h1>
-      <p style="font-size: 1.1rem; color: #c8c0b0; line-height: 1.7; margin-bottom: 1.5rem; max-width: 640px; margin-left: auto; margin-right: auto;">
+      <p style="font-size: 1.1rem; color: #5c5248; line-height: 1.7; margin-bottom: 1.5rem; max-width: 640px; margin-left: auto; margin-right: auto;">
         Expert-ranked reviews of every major sugar daddy dating platform. We tested each app for privacy, member quality, features, and real results. Here's who made the cut — and who leads the pack.
       </p>
       <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-bottom: 1rem;">
         {['Sugar Daddy Dating', 'Sugar Baby Apps', 'PPM Arrangements', 'Mutually Beneficial', 'Sugar Lifestyle'].map((tag) => (
-          <span style="padding: 0.3rem 0.75rem; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 2rem; font-size: 0.78rem; color: #c8c0b0;">{tag}</span>
+          <span style="padding: 0.3rem 0.75rem; background: rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.1); border-radius: 2rem; font-size: 0.78rem; color: #5c5248;">{tag}</span>
         ))}
       </div>
     </div>
@@ -56,10 +56,10 @@ const schema = {
   <!-- #1 Hanker Spotlight -->
   <section style="padding: 1rem 1.5rem 2rem;">
     <div style="max-width: 900px; margin: 0 auto;">
-      <div style="border-radius: 1rem; overflow: hidden; border: 2px solid #d4a843; background: linear-gradient(135deg, #111120 0%, #1a1a2e 100%); box-shadow: 0 0 60px rgba(212,168,67,0.12), 0 0 120px rgba(212,168,67,0.05); position: relative;">
+      <div style="border-radius: 1rem; overflow: hidden; border: 2px solid #c49a30; background: linear-gradient(135deg, #fffef8 0%, #faf5e8 100%); box-shadow: 0 0 60px rgba(196,154,48,0.1), 0 4px 24px rgba(0,0,0,0.06); position: relative;">
         <!-- Crown badge -->
         <div style="position: absolute; top: 1.25rem; right: 1.25rem;">
-          <div style="padding: 0.35rem 0.85rem; background: linear-gradient(135deg, #d4a843, #a87c28); border-radius: 2rem; font-size: 0.78rem; font-weight: 700; color: #0a0a0f; letter-spacing: 0.05em; text-transform: uppercase;">
+          <div style="padding: 0.35rem 0.85rem; background: linear-gradient(135deg, #c49a30, #a87c28); border-radius: 2rem; font-size: 0.78rem; font-weight: 700; color: #fff; letter-spacing: 0.05em; text-transform: uppercase;">
             👑 #1 Pick
           </div>
         </div>
@@ -67,25 +67,29 @@ const schema = {
         <div style="padding: 2.5rem 2rem;">
           <div style="display: flex; align-items: flex-start; gap: 1.5rem; flex-wrap: wrap;">
             <!-- Logo -->
-            <div style="width: 90px; height: 90px; border-radius: 1rem; overflow: hidden; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
-              <img
-                src={hanker.logo}
-                alt="Hanker — Best Sugar Daddy App"
-                style="width: 100%; height: 100%; object-fit: contain; padding: 6px;"
-                onerror="this.style.opacity='0'"
-              />
-            </div>
+            <a href="/hanker">
+              <div style="width: 90px; height: 90px; border-radius: 1rem; overflow: hidden; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd6c8;">
+                <img
+                  src={hanker.logo}
+                  alt="Hanker — Best Sugar Daddy App"
+                  style="width: 100%; height: 100%; object-fit: contain; padding: 6px;"
+                  onerror="this.style.opacity='0'"
+                />
+              </div>
+            </a>
             <!-- Info -->
             <div style="flex: 1; min-width: 220px;">
               <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.4rem; flex-wrap: wrap;">
-                <span style="background: rgba(212,168,67,0.15); border: 1px solid rgba(212,168,67,0.3); border-radius: 0.35rem; padding: 0.2rem 0.6rem; font-size: 0.75rem; font-weight: 700; color: #d4a843;">RANK #1</span>
-                <h2 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #f5f0e8; margin: 0;">Hanker</h2>
+                <span style="background: rgba(196,154,48,0.12); border: 1px solid rgba(196,154,48,0.3); border-radius: 0.35rem; padding: 0.2rem 0.6rem; font-size: 0.75rem; font-weight: 700; color: #a87c28;">RANK #1</span>
+                <a href="/hanker">
+                  <h2 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #1a150e; margin: 0;">Hanker</h2>
+                </a>
               </div>
               <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-                <span style="color: #d4a843; font-size: 1.1rem; letter-spacing: 2px;">★★★★★</span>
-                <span style="color: #c8c0b0; font-size: 0.85rem;">5.0 / 5</span>
+                <span style="color: #c49a30; font-size: 1.1rem; letter-spacing: 2px;">★★★★★</span>
+                <span style="color: #5c5248; font-size: 0.85rem;">5.0 / 5</span>
               </div>
-              <p style="color: #c8c0b0; font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.25rem;">
+              <p style="color: #5c5248; font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.25rem;">
                 The privacy-first sugar daddy dating app. No forced ID verification, crypto payments accepted, and servers outside US jurisdiction. The only sugar dating platform built to protect you — not surveil you.
               </p>
               <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
@@ -98,11 +102,11 @@ const schema = {
           </div>
 
           <!-- Feature Pills -->
-          <div style="margin-top: 1.75rem; padding-top: 1.75rem; border-top: 1px solid rgba(212,168,67,0.15);">
+          <div style="margin-top: 1.75rem; padding-top: 1.75rem; border-top: 1px solid rgba(196,154,48,0.2);">
             <div style="display: flex; flex-wrap: wrap; gap: 0.6rem;">
               {hanker.features.slice(0, 4).map((f) => (
-                <div style="display: flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0.85rem; background: rgba(212,168,67,0.05); border: 1px solid rgba(212,168,67,0.15); border-radius: 2rem; font-size: 0.8rem; color: #f5f0e8;">
-                  <span style="color: #d4a843;">&#10003;</span>
+                <div style="display: flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0.85rem; background: rgba(196,154,48,0.07); border: 1px solid rgba(196,154,48,0.2); border-radius: 2rem; font-size: 0.8rem; color: #1a150e;">
+                  <span style="color: #a87c28;">&#10003;</span>
                   {f.includes(' — ') ? f.split(' — ')[0] : f}
                 </div>
               ))}
@@ -113,7 +117,7 @@ const schema = {
 
       <!-- Why #1 label -->
       <div style="text-align: center; margin-top: 1rem;">
-        <span style="color: #6b6680; font-size: 0.8rem;">
+        <span style="color: #8c8478; font-size: 0.8rem;">
           Our editors ranked Hanker #1 for privacy, genuine connections, and innovation in sugar daddy dating.
         </span>
       </div>
@@ -123,24 +127,24 @@ const schema = {
   <!-- Rankings #2–#10 -->
   <section style="padding: 1rem 1.5rem 3rem;">
     <div style="max-width: 900px; margin: 0 auto;">
-      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #f5f0e8; margin-bottom: 0.5rem;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #1a150e; margin-bottom: 0.5rem;">
         Complete Sugar Daddy App Rankings
       </h2>
-      <p style="color: #c8c0b0; font-size: 0.9rem; margin-bottom: 1.75rem;">
+      <p style="color: #5c5248; font-size: 0.9rem; margin-bottom: 1.75rem;">
         The top 10 sugar daddy dating sites and apps — click any to read the full review.
       </p>
 
       <div style="display: flex; flex-direction: column; gap: 0.75rem;">
         {otherApps.map((app) => (
           <a href={`/${app.slug}`} style="text-decoration: none;" aria-label={`Read review of ${app.name}, ranked #${app.rank} sugar daddy app`}>
-            <div class="card" style="padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: 1.25rem; cursor: pointer;" onmouseover="this.style.borderColor='#d4a843'" onmouseout="this.style.borderColor='#22223a'">
+            <div class="card" style="padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: 1.25rem; cursor: pointer;" onmouseover="this.style.borderColor='#c49a30'" onmouseout="this.style.borderColor='#ddd6c8'">
               <!-- Rank -->
-              <div style="width: 2.25rem; height: 2.25rem; border-radius: 50%; background: #1a1a2e; border: 1px solid #22223a; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; color: #c8c0b0; flex-shrink: 0; font-family: sans-serif;">
+              <div style="width: 2.25rem; height: 2.25rem; border-radius: 50%; background: #e8e2d8; border: 1px solid #ddd6c8; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; color: #5c5248; flex-shrink: 0; font-family: sans-serif;">
                 {app.rank}
               </div>
 
               <!-- Logo -->
-              <div style="width: 48px; height: 48px; border-radius: 0.5rem; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+              <div style="width: 48px; height: 48px; border-radius: 0.5rem; background: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid #ddd6c8;">
                 <img
                   src={app.logo}
                   alt={`${app.name} logo`}
@@ -152,20 +156,20 @@ const schema = {
               <!-- Info -->
               <div style="flex: 1; min-width: 0;">
                 <div style="display: flex; align-items: baseline; gap: 0.5rem; margin-bottom: 0.2rem; flex-wrap: wrap;">
-                  <span style="font-weight: 700; color: #f5f0e8; font-size: 1rem;">{app.name}{app.trademark || ''}</span>
-                  <span style="color: #6b6680; font-size: 0.8rem; display: none;" class="sm-show">{app.memberCount}</span>
+                  <span style="font-weight: 700; color: #1a150e; font-size: 1rem;">{app.name}{app.trademark || ''}</span>
+                  <span style="color: #8c8478; font-size: 0.8rem; display: none;" class="sm-show">{app.memberCount}</span>
                 </div>
-                <p style="color: #c8c0b0; font-size: 0.83rem; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{app.tagline}</p>
+                <p style="color: #5c5248; font-size: 0.83rem; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{app.tagline}</p>
               </div>
 
               <!-- Rating -->
               <div style="text-align: right; flex-shrink: 0;">
-                <div style="color: #d4a843; font-size: 0.9rem; letter-spacing: 1px;" set:html={'&#9733;'.repeat(Math.floor(app.rating)) + '&#9734;'.repeat(5 - Math.floor(app.rating))}></div>
-                <div style="color: #6b6680; font-size: 0.75rem;">{app.rating.toFixed(1)}</div>
+                <div style="color: #c49a30; font-size: 0.9rem; letter-spacing: 1px;" set:html={'&#9733;'.repeat(Math.floor(app.rating)) + '&#9734;'.repeat(5 - Math.floor(app.rating))}></div>
+                <div style="color: #8c8478; font-size: 0.75rem;">{app.rating.toFixed(1)}</div>
               </div>
 
               <!-- Arrow -->
-              <div style="color: #d4a843; font-size: 1rem; flex-shrink: 0; opacity: 0.6;">→</div>
+              <div style="color: #a87c28; font-size: 1rem; flex-shrink: 0; opacity: 0.7;">→</div>
             </div>
           </a>
         ))}
@@ -177,22 +181,22 @@ const schema = {
 
   <!-- SEO Content Section -->
   <section style="padding: 3.5rem 1.5rem; max-width: 900px; margin: 0 auto;">
-    <h2 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #f5f0e8; margin-bottom: 1.25rem;">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #1a150e; margin-bottom: 1.25rem;">
       What Are Sugar Daddy Apps?
     </h2>
-    <div style="color: #c8c0b0; font-size: 0.95rem; line-height: 1.8; display: flex; flex-direction: column; gap: 1rem;">
+    <div style="color: #5c5248; font-size: 0.95rem; line-height: 1.8; display: flex; flex-direction: column; gap: 1rem;">
       <p>
-        Sugar daddy apps and sugar daddy dating sites are specialized platforms that connect wealthy, successful men (sugar daddies) with younger, attractive partners (sugar babies) for mutually beneficial relationships. Unlike traditional dating apps, these platforms are built around transparency — both parties openly discuss expectations, arrangements, and compensation from the start.
+        Sugar daddy apps and <a href="https://hanker.app">sugar daddy dating</a> sites are specialized platforms that connect wealthy, successful men (sugar daddies) with younger, attractive partners (sugar babies) for mutually beneficial relationships. Unlike traditional dating apps, these platforms are built around transparency — both parties openly discuss expectations, arrangements, and compensation from the start.
       </p>
       <p>
         Modern sugar daddy dating encompasses a range of arrangement styles: PPM (pay-per-meet) arrangements, monthly allowances, travel companionship, mentorship, and long-term relationships. The best sugar daddy apps make it easy to find compatible partners who share the same vision for the arrangement.
       </p>
       <p>
-        The sugar daddy dating landscape has evolved significantly in recent years. Privacy concerns, regulatory pressure (including FOSTA-SESTA in the US), and the demand for more authentic connections have driven innovation. This is why platforms like <a href="/hanker" style="color: #d4a843; text-decoration: none;">Hanker</a> — built privacy-first with servers outside US jurisdiction — represent the next generation of sugar daddy dating apps.
+        The sugar daddy dating landscape has evolved significantly in recent years. Privacy concerns, regulatory pressure (including FOSTA-SESTA in the US), and the demand for more authentic connections have driven innovation. This is why platforms like <a href="/hanker" style="color: #a87c28; text-decoration: none;">Hanker</a> — built privacy-first with servers outside US jurisdiction — represent the next generation of sugar daddy dating apps.
       </p>
     </div>
 
-    <h2 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #f5f0e8; margin-top: 2.5rem; margin-bottom: 1rem;">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #1a150e; margin-top: 2.5rem; margin-bottom: 1rem;">
       How We Rank Sugar Daddy Apps
     </h2>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
@@ -204,15 +208,15 @@ const schema = {
         { icon: '🌍', label: 'Reach', desc: 'Member count and geographic availability.' },
         { icon: '📱', label: 'Mobile Experience', desc: 'Quality of the iOS and Android apps.' },
       ].map((c) => (
-        <div style="background: #111120; border: 1px solid #22223a; border-radius: 0.75rem; padding: 1.25rem;">
+        <div style="background: #f2ede5; border: 1px solid #ddd6c8; border-radius: 0.75rem; padding: 1.25rem;">
           <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">{c.icon}</div>
-          <div style="font-weight: 600; color: #f5f0e8; font-size: 0.9rem; margin-bottom: 0.35rem; font-family: sans-serif;">{c.label}</div>
-          <div style="color: #c8c0b0; font-size: 0.82rem; line-height: 1.5;">{c.desc}</div>
+          <div style="font-weight: 600; color: #1a150e; font-size: 0.9rem; margin-bottom: 0.35rem; font-family: sans-serif;">{c.label}</div>
+          <div style="color: #5c5248; font-size: 0.82rem; line-height: 1.5;">{c.desc}</div>
         </div>
       ))}
     </div>
 
-    <h2 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #f5f0e8; margin-top: 2.5rem; margin-bottom: 1rem;">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #1a150e; margin-top: 2.5rem; margin-bottom: 1rem;">
       Frequently Asked Questions About Sugar Daddy Dating Apps
     </h2>
     <div style="display: flex; flex-direction: column; gap: 1rem;">
@@ -238,22 +242,22 @@ const schema = {
           a: 'Yes — Hanker is the leading sugar daddy app that doesn\'t require mandatory ID verification. Instead, it uses a Trust Score system based on community engagement, allowing members to establish credibility without compromising their anonymity.',
         },
       ].map((faq) => (
-        <div style="background: #111120; border: 1px solid #22223a; border-radius: 0.75rem; padding: 1.25rem;">
-          <h3 style="color: #f5f0e8; font-size: 0.95rem; font-weight: 600; margin-bottom: 0.6rem; font-family: sans-serif;">{faq.q}</h3>
-          <p style="color: #c8c0b0; font-size: 0.875rem; line-height: 1.7; margin: 0;">{faq.a}</p>
+        <div style="background: #f2ede5; border: 1px solid #ddd6c8; border-radius: 0.75rem; padding: 1.25rem;">
+          <h3 style="color: #1a150e; font-size: 0.95rem; font-weight: 600; margin-bottom: 0.6rem; font-family: sans-serif;">{faq.q}</h3>
+          <p style="color: #5c5248; font-size: 0.875rem; line-height: 1.7; margin: 0;">{faq.a}</p>
         </div>
       ))}
     </div>
   </section>
 
   <!-- Final CTA -->
-  <section style="padding: 3rem 1.5rem; background: radial-gradient(ellipse at center, rgba(212,168,67,0.08) 0%, transparent 70%);">
+  <section style="padding: 3rem 1.5rem; background: radial-gradient(ellipse at center, rgba(196,154,48,0.12) 0%, transparent 70%);">
     <div style="max-width: 600px; margin: 0 auto; text-align: center;">
       <div style="font-size: 2rem; margin-bottom: 1rem;">👑</div>
-      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #f5f0e8; margin-bottom: 0.75rem;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #1a150e; margin-bottom: 0.75rem;">
         Ready to Find Your Perfect Match?
       </h2>
-      <p style="color: #c8c0b0; font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.75rem;">
+      <p style="color: #5c5248; font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.75rem;">
         Start with Hanker — our #1 ranked sugar daddy app. Privacy-first, no mandatory ID verification, and free for the first 100,000 members. Sugar daddy dating done right.
       </p>
       <a href="https://hanker.app" target="_blank" rel="noopener noreferrer" class="btn-gold" style="font-size: 1rem; padding: 1rem 2.5rem;">
