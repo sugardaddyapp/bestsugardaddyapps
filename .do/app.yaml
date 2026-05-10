@@ -1,0 +1,9 @@
+name: hanker-dating
+services:
+- name: web
+  dockerfile_path: Dockerfile
+  instance_count: 1
+  instance_size_slug: apps-s-1vcpu-0.5gb
+  http_port: 80
+  git:
+    branch: main
