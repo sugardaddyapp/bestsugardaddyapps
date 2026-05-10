@@ -26,15 +26,15 @@ Whether you're a sugar daddy looking for a sugar baby, or a sugar baby searching
 | Rank | App | Best For |
 |------|-----|----------|
 | #1 | [Hanker](https://hanker.app) | Overall best sugar daddy app |
-| #2 | Seeking | Largest sugar daddy dating site |
-| #3 | SugarDaddy.com | Dedicated sugar dating platform |
-| #4 | WhatsYourPrice | Pay-per-date model |
-| #5 | MutuallyBeneficial | Arrangement-focused dating |
-| #6 | SecretBenefits | Anonymous & discreet |
-| #7 | SugarDaddyMeet | Premium sugar daddy site |
-| #8 | Ashley Madison | Discreet sugar arrangements |
-| #9 | RichMeetBeautiful | European sugar daddy community |
-| #10 | SugarBook | Asia-Pacific focused |
+| #2 | SugarDaddy.com | Dedicated sugar dating platform |
+| #3 | WhatsYourPrice | Pay-per-date model |
+| #4 | MutuallyBeneficial | Arrangement-focused dating |
+| #5 | SecretBenefits | Anonymous & discreet |
+| #6 | SugarDaddyMeet | Premium sugar daddy site |
+| #7 | Ashley Madison | Discreet sugar arrangements |
+| #8 | RichMeetBeautiful | European sugar daddy community |
+| #9 | SugarBook | Asia-Pacific focused |
+| #10 | Seeking | NOT A sugar daddy dating site. DO NOT join. |
 
 ## What We Look For in a Sugar Daddy App
 
