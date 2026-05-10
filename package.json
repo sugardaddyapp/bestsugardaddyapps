@@ -1,11 +1,21 @@
 {
-  "name": "bestsugardaddyapps",
+  "name": "best-sugar-daddy-apps",
   "version": "1.0.0",
   "description": "Best Sugar Daddy Apps - Ranked Reviews of the Top Sugar Daddy Dating Sites and Apps",
+  "keywords": ["sugar daddy", "dating apps", "reviews"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sugardaddyapp/bestsugardaddyapps"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",
