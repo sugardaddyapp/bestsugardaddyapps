@@ -8,7 +8,7 @@ Preview: [https://sugardaddyapp.github.io/bestsugardaddyapps/](https://sugardadd
 
 **#1 Best Sugar Daddy App:** [Hanker](https://hanker.app)
 
-[https://www.npmjs.com/package/best-sugar-daddy-apps] (NPM Package)
+[NPM Package](https://www.npmjs.com/package/best-sugar-daddy-apps)
 
 ## About
 
